@@ -1,6 +1,8 @@
-# 🚀 Business Accelerators Repository
+# <span style="color:purple;">Δpellera</span> Business Accelerators Repository
 
-Welcome to the **Business Accelerators Repository** — a centralized hub for innovative tools and solutions designed to streamline and enhance enterprise data operations.
+Welcome to the **Δpellera Business Accelerators Repository** — a centralized hub for innovative tools and solutions designed to streamline and enhance enterprise data operations.
+
+> ⚡ Powered by Δpellera — accelerating data-driven transformation.
 
 ## 📦 Contents
 

@@ -46,7 +46,13 @@
 .md-typeset .grid.cards > ul > li {
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+}
+
 .md-typeset table:not([class]) {
   border-radius: 12px;
   overflow: hidden;
@@ -56,8 +62,52 @@
   background: var(--md-primary-fg-color);
   color: var(--md-primary-bg-color);
 }
+.md-typeset table:not([class]) tbody tr:nth-child(odd) td {
+  background: rgba(112,84,255,.03);
+}
 
 /* Optional: hide automatic 'Home' H1 if MkDocs adds one */
 .md-content__inner > h1:first-child {
   display: none;
+}
+
+/* ---------- Screenshot & figure styling (for examples) ---------- */
+.md-typeset img.screenshot {
+  border-radius: 12px;
+  box-shadow: 0 14px 36px rgba(0,0,0,.18);
+  border: 1px solid rgba(112,84,255,.25);
+}
+.md-typeset figure figcaption {
+  text-align: center;
+  font-size: .9rem;
+  opacity: .8;
+  margin-top: .35rem;
+}
+
+/* ---------- Admonitions / callouts ---------- */
+.md-typeset .admonition {
+  border-radius: 12px;
+}
+.md-typeset .admonition.tip {
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+/* ---------- Buttons & tabs polish ---------- */
+.md-typeset .md-button--primary {
+  box-shadow: 0 6px 14px rgba(112,84,255,.25);
+}
+.tabbed-set > .tabbed-content {
+  border-radius: 12px;
+}
+
+/* ---------- Badges / chips (optional utility) ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(112,84,255,.25);
+  background: rgba(112,84,255,.08);
+  font-size: .85rem;
 }

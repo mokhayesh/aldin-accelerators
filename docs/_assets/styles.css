@@ -1,0 +1,55 @@
+/* Hero banner */
+.hero {
+  position: relative;
+  margin: 0 0 2rem 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 28px rgba(0,0,0,.25);
+}
+.hero-image {
+  width: 100%;
+  display: block;
+}
+.hero-title {
+  position: absolute;
+  left: clamp(16px, 4vw, 48px);
+  top: clamp(16px, 4vw, 48px);
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.5);
+  font-weight: 700;
+  line-height: 1.15;
+  display: grid;
+  gap: .25rem;
+}
+.hero-title span {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+}
+.hero-title small {
+  font-size: clamp(.95rem, 1.6vw, 1.15rem);
+  font-weight: 500;
+  opacity: .9;
+}
+
+/* Cards grid tweaks */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+/* Table polish */
+.md-typeset table:not([class]) {
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: .92rem;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: .55rem .75rem;
+}
+.md-typeset table:not([class]) thead th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Make images zoomable (glightbox) */
+.glightbox-clean .gslide-title { font-weight: 600; }

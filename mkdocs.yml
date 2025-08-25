@@ -1,5 +1,5 @@
 site_name: Accelerators Guidebook
-site_description: Repository for Business Accelerators
+site_description: Repository for Business Accelerators — docs and how-tos
 site_url: https://salahmokhayesh.github.io/accelerators/
 repo_name: SalahMokhayesh/accelerators
 repo_url: https://github.com/SalahMokhayesh/accelerators
@@ -7,18 +7,55 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  logo: _assets/logo.png
+  favicon: _assets/logo.png
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.indexes
-    - content.code.copy
+    - navigation.instant
+    - navigation.expand
     - toc.integrate
+    - header.autohide
+    - content.code.copy
     - search.suggest
     - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
 
 plugins:
   - search
+  - glightbox
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - _assets/styles.css
 
 nav:
   - Home: index.md

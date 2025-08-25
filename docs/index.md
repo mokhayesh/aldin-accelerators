@@ -13,27 +13,27 @@
 
 - :material-shield-key: **Data Classification**  
   Curate sensitivity, privacy, policies, and handling rules.  
-  [:octicons-arrow-right-16: Open](./architecture/)
+  [:octicons-arrow-right-16: Open](architecture/index.md)
 
 - :material-table: **Metadata Management**  
   Catalog, lineage, enrichment, and governance workflows.  
-  [:octicons-arrow-right-16: Open](./mdm/)
+  [:octicons-arrow-right-16: Open](mdm/index.md)
 
 - :material-clipboard-check: **Data Quality**  
   Rules, SLAs, automated checks, and scorecards.  
-  [:octicons-arrow-right-16: Open](./synthetic-data-generator/)
+  [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
 
 - :material-magnify-scan: **Data Profiling**  
   Fast profiling & sampling for analysis and QA.  
-  [:octicons-arrow-right-16: Open](./data-buddy/)
+  [:octicons-arrow-right-16: Open](data-buddy/index.md)
 
 - :material-scale-balance: **Compliance**  
   Policy automation and evidence collection.  
-  [:octicons-arrow-right-16: Open](./sidecar-applications/)
+  [:octicons-arrow-right-16: Open](sidecar-applications/index.md)
 
 - :material-robot-excited: **Conversational AI / RAG**  
   Knowledge base, red teaming, and observability.  
-  [:octicons-arrow-right-16: Open](./code-converter/)
+  [:octicons-arrow-right-16: Open](code-converter/index.md)
 
 </div>
 

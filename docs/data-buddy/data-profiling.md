@@ -23,7 +23,7 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 ## Example run (UI)
 
 <figure markdown>
-  ![](_assets/databuddy-profile-example.png){ .screenshot }
+  ![](../_assets/databuddy-profile-example.png){ .screenshot }
   <figcaption>Data Buddy — Profile analysis with completeness, uniqueness, min/max, median, and standard deviation per field.</figcaption>
 </figure>
 
@@ -38,7 +38,6 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 
 === "CLI (placeholder)"
     ```bash
-    # Replace with your real entry points when wired up
     python -m databuddy profile data/synthetic_parts_10000.csv \
       --summary out/profile/synthetic_parts_10000.json \
       --report  out/profile/synthetic_parts_10000.csv

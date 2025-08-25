@@ -64,11 +64,19 @@ nav:
   - Accelerators:
       - Architecture: architecture/index.md
       - Code Converter: code-converter/index.md
-      - Data Buddy: data-buddy/index.md
+      - Data Buddy:
+          - Overview: data-buddy/index.md
+          - Data Profiling: data-buddy/data-profiling.md
+          - Data Quality: data-buddy/data-quality.md
+          - Data Cataloging: data-buddy/data-cataloging.md
+          - Anomaly Detection: data-buddy/anomaly-detection.md
+          - Compliance: data-buddy/compliance.md
+          - Workflow Automation: data-buddy/workflow-automation.md
+          - Conversational AI: data-buddy/conversational-ai.md
+          - Knowledge Files: data-buddy/knowledge-files.md
       - MDM: mdm/index.md
       - Sidecar Applications: sidecar-applications/index.md
       - Synthetic Data Generator: synthetic-data-generator/index.md
-      - Test Data: test-data/index.md
   - Project:
       - Contributing: contributing.md
       - Changelog: changelog.md

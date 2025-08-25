@@ -26,7 +26,7 @@ hide:
   [:octicons-arrow-right-16: Open](code-converter/index.md)
 
 - :material-account-cog: **Data Buddy**  
-  Profiling, sampling, everyday data tasks.  
+  Profiling, DQ, cataloging, anomalies, compliance, automation, conversational AI, knowledge files.  
   [:octicons-arrow-right-16: Open](data-buddy/index.md)
 
 - :material-database-cog: **MDM**  
@@ -40,9 +40,5 @@ hide:
 - :material-robot-excited: **Synthetic Data Generator**  
   Privacy-preserving test data at scale.  
   [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
-
-- :material-table: **Test Data**  
-  Seed sets, schemas, factories.  
-  [:octicons-arrow-right-16: Open](test-data/index.md)
 
 </div>

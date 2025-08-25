@@ -1,51 +1,48 @@
-﻿<!-- Banner -->
-<figure class="hero" markdown>
-  ![](_assets/pellera-banner.png){ .hero-image }
-  <figcaption class="hero-title">
-    <span>Solutions / Accelerators</span>
-    <small>Opinionated, reusable building blocks for data &amp; AI delivery</small>
-  </figcaption>
-</figure>
+﻿---
+title: Home
+hide:
+  - toc
+---
+
+<div class="landing-hero">
+  <h1>Accelerators Guidebook</h1>
+  <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
+  <p class="cta">
+    <a class="md-button md-button--primary" href="architecture/index.md">Explore accelerators</a>
+    <a class="md-button" href="https://github.com/SalahMokhayesh/accelerators">View on GitHub</a>
+  </p>
+</div>
 
 ## Explore the accelerators
 
 <div class="grid cards" markdown>
 
-- :material-shield-key: **Data Classification**  
-  Curate sensitivity, privacy, policies, and handling rules.  
+- :material-domain: **Architecture**  
+  Reference patterns, IaC, security baselines.  
   [:octicons-arrow-right-16: Open](architecture/index.md)
 
-- :material-table: **Metadata Management**  
-  Catalog, lineage, enrichment, and governance workflows.  
-  [:octicons-arrow-right-16: Open](mdm/index.md)
-
-- :material-clipboard-check: **Data Quality**  
-  Rules, SLAs, automated checks, and scorecards.  
-  [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
-
-- :material-magnify-scan: **Data Profiling**  
-  Fast profiling & sampling for analysis and QA.  
-  [:octicons-arrow-right-16: Open](data-buddy/index.md)
-
-- :material-scale-balance: **Compliance**  
-  Policy automation and evidence collection.  
-  [:octicons-arrow-right-16: Open](sidecar-applications/index.md)
-
-- :material-robot-excited: **Conversational AI / RAG**  
-  Knowledge base, red teaming, and observability.  
+- :material-code-json: **Code Converter**  
+  Oracle/PLSQL → Spark SQL utilities.  
   [:octicons-arrow-right-16: Open](code-converter/index.md)
 
+- :material-account-cog: **Data Buddy**  
+  Profiling, sampling, everyday data tasks.  
+  [:octicons-arrow-right-16: Open](data-buddy/index.md)
+
+- :material-database-cog: **MDM**  
+  Matching, survivorship, reference data flows.  
+  [:octicons-arrow-right-16: Open](mdm/index.md)
+
+- :material-puzzle: **Sidecar Apps**  
+  Small UIs/services to extend your platform.  
+  [:octicons-arrow-right-16: Open](sidecar-applications/index.md)
+
+- :material-robot-excited: **Synthetic Data Generator**  
+  Privacy-preserving test data at scale.  
+  [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
+
+- :material-table: **Test Data**  
+  Seed sets, schemas, factories.  
+  [:octicons-arrow-right-16: Open](test-data/index.md)
+
 </div>
-
----
-
-### Getting started
-1. Pick an accelerator above.
-2. Use the **Quickstart** on that page to run locally.
-3. Adapt the **Operate** and **Customize** sections to your stack.
-
-!!! tip "Local preview"
-    ```bash
-    pip install mkdocs-material
-    mkdocs serve
-    ```

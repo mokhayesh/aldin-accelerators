@@ -1,55 +1,57 @@
-/* Hero banner */
-.hero {
-  position: relative;
-  margin: 0 0 2rem 0;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 28px rgba(0,0,0,.25);
-}
-.hero-image {
-  width: 100%;
-  display: block;
-}
-.hero-title {
-  position: absolute;
-  left: clamp(16px, 4vw, 48px);
-  top: clamp(16px, 4vw, 48px);
-  color: #fff;
-  text-shadow: 0 2px 12px rgba(0,0,0,.5);
-  font-weight: 700;
-  line-height: 1.15;
-  display: grid;
-  gap: .25rem;
-}
-.hero-title span {
-  font-size: clamp(1.6rem, 4vw, 3rem);
-}
-.hero-title small {
-  font-size: clamp(.95rem, 1.6vw, 1.15rem);
-  font-weight: 500;
-  opacity: .9;
+/* ---------- Header gets the Pellera banner ---------- */
+.md-header {
+  /* banner + subtle dark overlay for contrast */
+  background:
+    linear-gradient(90deg, rgba(18,12,40,.80) 0%, rgba(29,0,80,.55) 60%, rgba(50,0,120,.40) 100%),
+    url("pellera-banner.png") right center / cover no-repeat;
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
 }
 
-/* Cards grid tweaks */
+/* Optional: tidy the search field on top of an image header */
+.md-search__form {
+  background-color: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: saturate(140%) blur(2px);
+}
+
+/* ---------- Minimal hero on the homepage ---------- */
+.landing-hero {
+  margin: 1.25rem 0 1.5rem 0;
+  padding: clamp(18px, 4vw, 28px);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(112,84,255,.06), rgba(112,84,255,.02));
+  border: 1px solid rgba(112,84,255,.25);
+  box-shadow: 0 8px 28px rgba(0,0,0,.06);
+  text-align: left;
+}
+.landing-hero h1 {
+  margin: 0 0 .25rem 0;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  line-height: 1.1;
+}
+.landing-hero .subtitle {
+  margin: 0 0 .8rem 0;
+  opacity: .85;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+}
+.landing-hero .cta .md-button { margin-right: .5rem; }
+
+/* ---------- Card & table polish ---------- */
 .md-typeset .grid.cards > ul > li {
   border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(0,0,0,.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
 }
-
-/* Table polish */
 .md-typeset table:not([class]) {
   border-radius: 12px;
   overflow: hidden;
-  font-size: .92rem;
-}
-.md-typeset table:not([class]) th,
-.md-typeset table:not([class]) td {
-  padding: .55rem .75rem;
+  font-size: .95rem;
 }
 .md-typeset table:not([class]) thead th {
   background: var(--md-primary-fg-color);
   color: var(--md-primary-bg-color);
 }
 
-/* Make images zoomable (glightbox) */
-.glightbox-clean .gslide-title { font-weight: 600; }
+/* Optional: hide automatic 'Home' H1 if MkDocs adds one */
+.md-content__inner > h1:first-child {
+  display: none;
+}

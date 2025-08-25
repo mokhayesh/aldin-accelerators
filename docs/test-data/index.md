@@ -1,11 +1,3 @@
-### `/docs/test-data/index.md`
-```markdown
-# Test Data
+# TEST DATA
 
-
-Seed datasets, factories, and refresh strategies.
-
-
-- Folder layout
-- How to create a new factory
-- Example schemas
+Placeholder page. Replace with real content.

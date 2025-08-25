@@ -1,9 +1,3 @@
-# Sidecar Applications
+# SIDECAR APPLICATIONS
 
-
-Small UIs/services that extend the core platform.
-
-
-- Auth & RBAC patterns
-- API gateways and rate limits
-- Deployment examples
+Placeholder page. Replace with real content.

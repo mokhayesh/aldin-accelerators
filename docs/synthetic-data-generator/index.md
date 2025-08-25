@@ -1,9 +1,3 @@
-# Synthetic Data Generator
+# SYNTHETIC DATA GENERATOR
 
-
-Generate statistically realistic, privacy‑preserving data for dev/test.
-
-
-## Quickstart
-```bash
-python synth.py --schema examples/customer.yml --out data/customers.csv --rows 10000
+Placeholder page. Replace with real content.

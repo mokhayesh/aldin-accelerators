@@ -1,6 +1,4 @@
-# .github/workflows/gh-pages.yml
 name: Deploy MkDocs
-
 on:
   push:
     branches: [ main ]
@@ -30,8 +28,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
+          pip install \
+            mkdocs-material==9.* \
+            mkdocs-git-revision-date-localized-plugin \
+            mkdocs-minify-plugin \
+            mkdocs-glightbox
 
+      # If you still want strict mode, keep the next line as-is
       - name: Build site
         run: mkdocs build --strict
 

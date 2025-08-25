@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: _assets/pellera-logo.png       # put this file in docs/_assets/
+  logo: _assets/pellera-logo.png        # docs/_assets/pellera-logo.png
   favicon: _assets/pellera-logo.png
   font:
     text: Inter
@@ -16,8 +16,8 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.indexes
-    - navigation.expand
     - navigation.instant
+    - navigation.expand
     - toc.integrate
     - header.autohide
     - content.code.copy
@@ -34,14 +34,12 @@ theme:
       accent: deep purple
 
 extra_css:
-  - _assets/styles.css
+  - _assets/styles.css                   # docs/_assets/styles.css
 
 plugins:
   - search
-  - mkdocs-minify-plugin:
+  - minify:
       minify_html: true
-  # If your workflow installs it, you can enable glightbox:
-  # - glightbox
 
 markdown_extensions:
   - admonition

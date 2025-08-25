@@ -58,7 +58,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Data Governance: data-governance/index.md
+  - Data Governance:
+      - Overview: data-governance/index.md
+      - Assessment Questions: data-governance/assessment.md
   - Accelerators:
       - Architecture: architecture/index.md
       - Code Converter: code-converter/index.md

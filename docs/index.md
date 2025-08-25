@@ -5,11 +5,11 @@ hide:
 ---
 
 <div class="landing-hero">
-  <h1>Data Governance Accelerators</h1>
+  <h1>Data Governance and Accelerators</h1>
   <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
   <p class="cta">
-    <a class="md-button md-button--primary" href="architecture/index.md">Explore accelerators</a>
-    <a class="md-button" href="https://github.com/SalahMokhayesh/accelerators">View on GitHub</a>
+    <a class="md-button md-button--primary" href="data-governance/index.md">View Data Governance</a>
+    <a class="md-button" href="architecture/index.md">Explore Accelerators</a>
   </p>
 </div>
 

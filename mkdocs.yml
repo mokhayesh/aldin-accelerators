@@ -1,5 +1,5 @@
-site_name: Data Governance Accelerators
-site_description: Data Governance Accelerators — docs and how-tos
+site_name: Data Governance and Accelerators
+site_description: Data Governance and Accelerators — docs and how-tos
 site_url: https://salahmokhayesh.github.io/accelerators/
 repo_name: SalahMokhayesh/accelerators
 repo_url: https://github.com/SalahMokhayesh/accelerators
@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: _assets/pellera-logo.png        # docs/_assets/pellera-logo.png
+  logo: _assets/pellera-logo.png
   favicon: _assets/pellera-logo.png
   font:
     text: Inter
@@ -34,7 +34,7 @@ theme:
       accent: deep purple
 
 extra_css:
-  - _assets/styles.css                   # docs/_assets/styles.css
+  - _assets/styles.css
 
 plugins:
   - search
@@ -58,7 +58,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Data Governance Accelerators:
+  - Data Governance: data-governance/index.md
+  - Accelerators:
       - Architecture: architecture/index.md
       - Code Converter: code-converter/index.md
       - Data Buddy: data-buddy/index.md

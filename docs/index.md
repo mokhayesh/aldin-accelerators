@@ -5,7 +5,7 @@ hide:
 ---
 
 <div class="landing-hero">
-  <h1>Accelerators Guidebook</h1>
+  <h1>Data Governance Accelerators</h1>
   <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
   <p class="cta">
     <a class="md-button md-button--primary" href="architecture/index.md">Explore accelerators</a>

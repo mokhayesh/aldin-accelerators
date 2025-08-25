@@ -1,13 +1,19 @@
-/* ---------- Header gets the Pellera banner ---------- */
+/* ---------- Header uses the Pellera banner (site-wide) ---------- */
 .md-header {
-  /* banner + subtle dark overlay for contrast */
   background:
     linear-gradient(90deg, rgba(18,12,40,.80) 0%, rgba(29,0,80,.55) 60%, rgba(50,0,120,.40) 100%),
     url("pellera-banner.png") right center / cover no-repeat;
   box-shadow: 0 2px 12px rgba(0,0,0,.25);
 }
 
-/* Optional: tidy the search field on top of an image header */
+/* Crisp header logo size */
+.md-header .md-logo img {
+  height: 22px;          /* adjust 20–28px to taste */
+  width: auto;
+  margin-right: .35rem;
+}
+
+/* Search field on the image header */
 .md-search__form {
   background-color: rgba(255,255,255,.10);
   border: 1px solid rgba(255,255,255,.15);
@@ -36,7 +42,7 @@
 }
 .landing-hero .cta .md-button { margin-right: .5rem; }
 
-/* ---------- Card & table polish ---------- */
+/* ---------- Cards & tables polish ---------- */
 .md-typeset .grid.cards > ul > li {
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,.08);

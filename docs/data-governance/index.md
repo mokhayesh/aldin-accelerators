@@ -37,33 +37,7 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 ---
 
-## Data Architecture
 
-**What it is.** The technical foundation that makes governance real: how data is organized and flows across **domains, zones (raw → curated → serving), storage, models, APIs, and compute**, plus the **integration patterns** (batch, stream, event-driven) and **identity/permission model** that secure access.
-
-**Why it matters.** Architecture converts policy into practice—giving teams **repeatable, future-proof** patterns that are **cost-effective, scalable, secure,** and easy to operate. It also accelerates delivery by promoting **reusable components** and **reference designs**.
-
-**Typical outcomes.**
-- Standard ingestion patterns (CDC, streaming, file, API) and governed landing zones  
-- Canonical data models and domain boundaries  
-- Event and metadata contracts; schema/versioning strategy  
-- Platform guardrails (cost, security, privacy) baked into pipelines
-
----
-
-## Data Lineage
-
-**What it is.** The **trace of data** from system to system and from column to column—covering **both technical lineage** (jobs, transforms, code) and **business lineage** (logical terms and processes).
-
-**Why it matters.** Lineage improves **trust** (“where did this number come from?”), speeds **root-cause analysis**, informs **impact assessments** before changes, and provides **evidence** for regulatory and internal audits.
-
-**Typical outcomes.**
-- Automated capture of pipeline/task lineage and column-level mappings  
-- Visualization from source to report, with drill-downs to code  
-- Change-impact and blast-radius analysis  
-- Integration with catalog and quality signals (e.g., show lineage alongside DQ scores)
-
----
 
 ## Capability matrix
 

@@ -24,7 +24,7 @@ theme:
       accent: purple
 
 extra_css:
-  - styles.css
+  - _assets/styles.css   # ✔ stylesheet lives in docs/_assets/
 
 plugins:
   - search

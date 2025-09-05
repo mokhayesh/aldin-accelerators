@@ -6,7 +6,7 @@ hide:
 
 <div class="landing-hero" markdown>
 
-# Data Governance - Deliverables and Accelerators
+# **Data Governance** - Deliverables and Accelerators
 <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
 
 [View Data Governance](data-governance/index.md){ .md-button .md-button--primary }

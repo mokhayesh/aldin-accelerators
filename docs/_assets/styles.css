@@ -1,9 +1,35 @@
+/* =========================================================
+   Pellera brand theme (purple) + header banner integration
+   ========================================================= */
+
+/* Brand variables (used by Material + custom rules) */
+:root {
+  --brand-navy:     #0c0a2b;  /* deep indigo from banner */
+  --brand-violet:   #4e31bf;  /* Pellera purple */
+  --brand-electric: #7b2cff;  /* bright purple highlight */
+
+  /* Wire into Material color tokens */
+  --md-primary-fg-color: var(--brand-violet);
+  --md-primary-fg-color--light: #8a63ff;
+  --md-primary-fg-color--dark:  #3a1db3;
+  --md-accent-fg-color: var(--brand-electric);
+}
+
 /* ---------- Header uses the Pellera banner (site-wide) ---------- */
 .md-header {
   background:
-    linear-gradient(90deg, rgba(18,12,40,.80) 0%, rgba(29,0,80,.55) 60%, rgba(50,0,120,.40) 100%),
-    url("pellera-banner.png") right center / cover no-repeat;
+    /* subtle purple overlay to keep text readable */
+    linear-gradient(90deg, rgba(12,10,43,.92) 0%, rgba(78,49,191,.65) 58%, rgba(123,44,255,.45) 100%),
+    /* correct path from docs/styles.css → docs/_assets/ */
+    url("_assets/pellera-banner.png") right center / cover no-repeat;
+  color: #fff;
   box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+/* Optional: keep tabs visually attached to the header */
+.md-tabs {
+  background: linear-gradient(90deg, rgba(12,10,43,.85), rgba(78,49,191,.55));
+  color: #fff;
 }
 
 /* Crisp header logo size */
@@ -14,11 +40,12 @@
 }
 
 /* Search field on the image header */
-.md-search__form {
+.md-header .md-search__form {
   background-color: rgba(255,255,255,.10);
   border: 1px solid rgba(255,255,255,.15);
   backdrop-filter: saturate(140%) blur(2px);
 }
+.md-header .md-search__input { color: #fff; }
 
 /* ---------- Minimal hero on the homepage ---------- */
 .landing-hero {
@@ -41,6 +68,29 @@
   font-size: clamp(1rem, 1.4vw, 1.1rem);
 }
 .landing-hero .cta .md-button { margin-right: .5rem; }
+
+/* ---------- Buttons (stay on brand) ---------- */
+a.md-button--primary,
+.md-typeset .md-button.md-button--primary {
+  background: linear-gradient(120deg, var(--brand-violet), var(--brand-electric));
+  color: #fff !important;
+  border: 0;
+  box-shadow: 0 6px 14px rgba(123,44,255,.25);
+}
+a.md-button--primary:hover,
+.md-typeset .md-button.md-button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(123,44,255,.35);
+}
+a.md-button,
+.md-typeset .md-button {
+  border-color: var(--brand-violet);
+}
+a.md-button:hover,
+.md-typeset .md-button:hover {
+  border-color: var(--brand-electric);
+  color: var(--brand-electric) !important;
+}
 
 /* ---------- Cards & tables polish ---------- */
 .md-typeset .grid.cards > ul > li {
@@ -67,9 +117,7 @@
 }
 
 /* Optional: hide automatic 'Home' H1 if MkDocs adds one */
-.md-content__inner > h1:first-child {
-  display: none;
-}
+.md-content__inner > h1:first-child { display: none; }
 
 /* ---------- Screenshot & figure styling (for examples) ---------- */
 .md-typeset img.screenshot {
@@ -85,20 +133,11 @@
 }
 
 /* ---------- Admonitions / callouts ---------- */
-.md-typeset .admonition {
-  border-radius: 12px;
-}
-.md-typeset .admonition.tip {
-  border-left: 4px solid var(--md-primary-fg-color);
-}
+.md-typeset .admonition { border-radius: 12px; }
+.md-typeset .admonition.tip { border-left: 4px solid var(--md-primary-fg-color); }
 
-/* ---------- Buttons & tabs polish ---------- */
-.md-typeset .md-button--primary {
-  box-shadow: 0 6px 14px rgba(112,84,255,.25);
-}
-.tabbed-set > .tabbed-content {
-  border-radius: 12px;
-}
+/* ---------- Tabs polish ---------- */
+.tabbed-set > .tabbed-content { border-radius: 12px; }
 
 /* ---------- Badges / chips (optional utility) ---------- */
 .badge {

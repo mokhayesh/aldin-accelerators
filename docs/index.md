@@ -9,7 +9,7 @@ hide:
 # Data Governance and Accelerators
 <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
 
-[View Data Governance](data-governance/){ .md-button .md-button--primary }
+[View Data Governance](data-governance/index.md){ .md-button .md-button--primary }
 [Explore Accelerators](#accelerators){ .md-button }
 
 </div>

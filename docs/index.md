@@ -4,16 +4,17 @@ hide:
   - toc
 ---
 
-<div class="landing-hero">
-  <h1>Data Governance and Accelerators</h1>
-  <p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
-  <p class="cta">
-    <a class="md-button md-button--primary" href="data-governance/index.md">View Data Governance</a>
-    <a class="md-button" href="architecture/index.md">Explore Accelerators</a>
-  </p>
+<div class="landing-hero" markdown>
+
+# Data Governance and Accelerators
+<p class="subtitle">Opinionated, reusable building blocks for data &amp; AI delivery</p>
+
+[View Data Governance](data-governance/){ .md-button .md-button--primary }
+[Explore Accelerators](#accelerators){ .md-button }
+
 </div>
 
-## Explore the accelerators
+## Explore the accelerators { #accelerators }
 
 <div class="grid cards" markdown>
 

@@ -1,7 +1,6 @@
 site_name: Data Governance and Accelerators
 repo_url: https://github.com/SalahMokhayesh/accelerators
 docs_dir: docs
-# strict mode is enabled by your build command (mkdocs build --strict)
 
 theme:
   name: material
@@ -19,9 +18,7 @@ extra_css:
   - styles.css
 
 plugins:
-  - search
-  - git-revision-date-localized:
-      fallback_to_build_date: true
+  - search   # ← removed git-revision-date-localized to avoid missing-plugin error
 
 markdown_extensions:
   - admonition
@@ -47,7 +44,7 @@ nav:
       - Overview: data-governance/index.md
       - Assessment Questions: data-governance/assessment.md
   - Accelerators:
-      - Prompt Engineering: prompt-engineering/index.md    # ← new
+      - Prompt Engineering: prompt-engineering/index.md
       - Code Converter: code-converter/index.md
       - Data Buddy:
           - Overview: data-buddy/index.md
@@ -62,7 +59,9 @@ nav:
       - MDM: mdm/index.md
       - Sidecar Applications: sidecar-applications/index.md
       - Synthetic Data Generator: synthetic-data-generator/index.md
-      - Test Data (temp): test-data/index.md   # Remove this after deleting docs/test-data/
+      # If docs/test-data/ still exists and you use --strict, keep the next line.
+      # Remove it after you delete that folder.
+      # - Test Data (temp): test-data/index.md
   - Project:
       - Contributing: contributing.md
       - Changelog: changelog.md

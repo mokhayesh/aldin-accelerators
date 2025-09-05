@@ -11,8 +11,8 @@
 ## High-level architecture
 
 <figure markdown>
-  ![](_assets/sidecar-architecture.png){ .screenshot }
-  <figcaption>Sidecar Applications / Accelerators — high-level flow: read from the production lake, perform an action, push curated results, catalog, and query.</figcaption>
+  ![](../_assets/sidecar-architecture.png){ .screenshot }
+  <figcaption>Sidecar Applications / Accelerators — read from the production lake, perform an action, push curated results, catalog, and query.</figcaption>
 </figure>
 
 ### How it works (typical flow)
@@ -23,20 +23,11 @@
 5. **Catalog & lineage** updated; results are queryable for BI/analytics and monitored by governance tools.
 
 ### Common actions
-- **Data Profiling** (shape/stats/PII scan)  
-- **Data Quality** (evaluate or assign rules, SLAs, and exceptions)  
-- **Data Cataloging** (business terms, owners, classifications)  
-- **Anomaly Detection** (drift/outliers/threshold breaches)  
-- **Compliance** (policy checks, evidence packaging)  
-- **Workflow Automation** (orchestrate profile → DQ → publish)  
-- **Conversational AI / RAG** (assistants over catalog + rules)  
-- **Knowledge Files** (glossaries, playbooks, runbooks)
-
----
+- **Data Profiling** · **Data Quality** · **Data Cataloging** · **Anomaly Detection**  
+- **Compliance** · **Workflow Automation** · **Conversational AI / RAG** · **Knowledge Files**
 
 ## Implementation notes
 - **Inputs:** table or file path(s) (CSV/Parquet), optional filters/partitions.  
-- **Outputs:** curated tables/files, metrics, logs/evidence; registered in the catalog for discovery.  
-- **Security:** use least-privilege credentials; enforce classification-driven access on outputs.  
+- **Outputs:** curated tables/files, metrics, logs/evidence; registered in the catalog.  
+- **Security:** least-privilege creds; classification-driven access on outputs.  
 - **Ops:** schedule with a job runner or CI; emit metrics for health and value tracking.
-

@@ -18,9 +18,9 @@ hide:
 
 <div class="grid cards" markdown>
 
-- :material-domain: **Architecture**  
-  Reference patterns, IaC, security baselines.  
-  [:octicons-arrow-right-16: Open](architecture/index.md)
+- :material-chat-processing: **Prompt Engineering**  
+  Patterns for structured prompts, grounding, guardrails, and evaluation to make LLM features **reliable, safe, and repeatable**.  
+  [:octicons-arrow-right-16: Open](prompt-engineering/index.md)
 
 - :material-code-json: **Code Converter**  
   Oracle/PLSQL → Spark SQL utilities.  

@@ -43,22 +43,58 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 <!-- Scoped styling just for this table -->
 <style>
+/* Capability Matrix – Pellera banner look + compact, readable layout */
+
+/* Match the banner/header gradient (deep indigo → Pellera purple → electric purple) */
+:root {
+  --cap-header-gradient: linear-gradient(
+    90deg,
+    rgba(12,10,43,.92) 0%,
+    rgba(78,49,191,.85) 58%,
+    rgba(123,44,255,.65) 100%
+  );
+}
+
+.cap-table {                     /* shrink overall font a bit */
+  font-size: .92rem;
+}
+
+@media (max-width: 900px) {      /* a touch smaller on narrow screens */
+  .cap-table { font-size: .88rem; }
+}
+
 .cap-table table {
   width: 100%;
+  table-layout: fixed;           /* prevents overflow; respects widths below */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
+
 .cap-table thead th {
-  background: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  background: var(--cap-header-gradient);  /* banner-matching header */
+  color: #fff;
   font-weight: 600;
 }
+
+.cap-table td,
+.cap-table th {
+  vertical-align: top;
+  padding: .60rem .75rem;        /* slightly tighter to fit more content */
+}
+
+/* Balanced column widths (will be honored because of table-layout: fixed) */
+.cap-table thead th:nth-child(1) { width: 22%; }  /* Capability / Offerings   */
+.cap-table thead th:nth-child(2) { width: 36%; }  /* What It Means            */
+.cap-table thead th:nth-child(3) { width: 20%; }  /* Who’s Involved           */
+.cap-table thead th:nth-child(4) { width: 22%; }  /* Why It Matters           */
+
+.cap-table td {                  /* wrap long words/URLs to avoid scrolling */
+  word-break: break-word;
+}
+
 .cap-table tbody tr:nth-child(odd) td {
   background: rgba(112,84,255,.03);
-}
-.cap-table td, .cap-table th {
-  vertical-align: top;
 }
 </style>
 

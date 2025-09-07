@@ -1,8 +1,8 @@
-# 🚀 Δpellera Business Accelerators Repository
+# 🚀 Aldin AI Business Accelerators Repository
 
-Welcome to the **Δpellera Business Accelerators Repository** — a centralized hub of cutting-edge tools and solutions engineered to streamline and elevate enterprise data operations.
+Welcome to the **Aldin AI Business Accelerators Repository** — a centralized hub of cutting-edge tools and solutions engineered to streamline and elevate enterprise data operations.
 
-> ⚡ Powered by Δpellera — accelerating data-driven transformation.
+> ⚡ Powered by Aldin AI — accelerating data-driven transformation.
 
 ---
 

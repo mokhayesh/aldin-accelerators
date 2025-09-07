@@ -1,83 +1,29 @@
-﻿/* Aldin custom theme (Material for MkDocs) */
-
-/* --- Core brand colors --- */
 :root {
-  /* dark surface */
   --aldin-bg:        #0d141a;
   --aldin-surface:   #111a20;
   --aldin-card:      #151f27;
-
-  /* brand */
   --aldin-primary:   #18d4e0;  /* neon cyan */
   --aldin-accent:    #b26cff;  /* purple */
-  --aldin-ink:       #e6f0f2;  /* off-white text */
+  --aldin-ink:       #e6f0f2;
   --aldin-ink-dim:   #b7c5cc;
-
-  /* helper */
   --aldin-border:    #20303a;
 }
 
-/* Dark scheme (matches palette scheme: aldin-dark) */
 [data-md-color-scheme="aldin-dark"] {
-  --md-default-bg-color:     var(--aldin-bg);
-  --md-default-fg-color:     var(--aldin-ink);
+  --md-default-bg-color: var(--aldin-bg);
+  --md-default-fg-color: var(--aldin-ink);
   --md-default-fg-color--light: var(--aldin-ink-dim);
-  --md-primary-fg-color:     var(--aldin-primary);
-  --md-primary-fg-color--light: #6ee7f2;
-  --md-accent-fg-color:      var(--aldin-accent);
-
-  --md-code-bg-color:        #0b1015;
-  --md-code-fg-color:        #d7e6ea;
-
-  /* header */
-  --md-header-bg-color:      #0b1116e6;
-  --md-header-fg-color:      var(--aldin-ink);
+  --md-primary-fg-color: var(--aldin-primary);
+  --md-accent-fg-color: var(--aldin-accent);
 }
 
-/* Light scheme (optional) */
 [data-md-color-scheme="aldin-light"] {
   --md-default-bg-color: #f7fbfc;
   --md-default-fg-color: #0f2a33;
   --md-primary-fg-color: var(--aldin-primary);
-  --md-accent-fg-color:  var(--aldin-accent);
+  --md-accent-fg-color: var(--aldin-accent);
 }
 
-/* --- Cosmetic tweaks --- */
-
-/* Header subtle pattern/gradient */
-.md-header {
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--aldin-border);
-}
-
-/* Active/hover nav link accent */
-.md-tabs__link--active,
-.md-nav__link--active {
-  color: var(--aldin-primary);
-}
-.md-nav__link:hover {
-  color: var(--aldin-accent);
-}
-
-/* Cards and admonitions a bit more contrast */
-.md-typeset .admonition,
-.md-typeset details {
-  background: var(--aldin-card);
-  border-color: var(--aldin-border);
-}
-
-/* Buttons (primary style) */
-.md-button--primary,
-.md-typeset .md-button--primary {
-  background: var(--aldin-primary);
-  color: #001217;
-  border: none;
-}
-.md-button--primary:hover {
-  filter: brightness(1.05);
-}
-
-/* Hero/logo centering helpers (use in your index.md) */
 .hero {
   display: grid;
   place-items: center;
@@ -92,10 +38,8 @@
 .hero h1 {
   margin: 1rem 0 0.5rem;
   color: var(--aldin-ink);
-  letter-spacing: 0.2px;
 }
 .hero p {
   color: var(--aldin-ink-dim);
   font-size: 1.1rem;
 }
-

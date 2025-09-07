@@ -1,74 +1,45 @@
-﻿site_name: Data Governance - Deliverables and Accelerators
-repo_url: https://github.com/SalahMokhayesh/accelerators
-docs_dir: docs
+site_name: Aldin Accelerators
+site_url: https://mokhayesh.github.io/aldin-accelerators
+repo_url: https://github.com/mokhayesh/aldin-accelerators
+repo_name: aldin-accelerators
 
 theme:
   name: material
-  logo: _assets/Aldin AI-logo.png
-  favicon: _assets/Aldin AI-logo.png
+  logo: _assets/aldin-logo.png
+  favicon: _assets/aldin-favicon.png
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - header.autohide
+    - content.code.copy
+    - content.tooltips
+    - toc.follow
     - search.suggest
     - search.highlight
-    - content.code.copy
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: purple
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: purple
+    - scheme: aldin-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: aldin-light
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
 
 extra_css:
-  - _assets/styles.css   # âœ” stylesheet lives in docs/_assets/
-
-plugins:
-  - search
-
-markdown_extensions:
-  - admonition
-  - def_list
-  - footnotes
-  - attr_list
-  - md_in_html
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
+  - _assets/aldin-theme.css
 
 nav:
   - Home: index.md
-  - Data Governance:
-      - Overview: data-governance/index.md
-      - Assessment Questions: data-governance/assessment.md
-  - Accelerators:
-      - Prompt Engineering: prompt-engineering/index.md
-      - Code Converter: code-converter/index.md
-      - Data Buddy:
-          - Overview: data-buddy/index.md
-          - Data Profiling: data-buddy/data-profiling.md
-          - Data Quality: data-buddy/data-quality.md
-          - Data Cataloging: data-buddy/data-cataloging.md
-          - Anomaly Detection: data-buddy/anomaly-detection.md
-          - Compliance: data-buddy/compliance.md
-          - Workflow Automation: data-buddy/workflow-automation.md
-          - Conversational AI: data-buddy/conversational-ai.md
-          - Knowledge Files: data-buddy/knowledge-files.md
-      - MDM: mdm/index.md
-      - Sidecar Applications: sidecar-applications/index.md
-      - Synthetic Data Generator: synthetic-data-generator/index.md
-  - Project:
-      - Contributing: contributing.md
-      - Changelog: changelog.md
-
+  - Data Governance: data-governance/index.md
+  - Prompt Engineering: prompt-engineering/index.md
+  - Code Converter: code-converter/index.md
+  - Data Buddy: data-buddy/index.md
+  - MDM: mdm/index.md
+  - Sidecar Apps: sidecar-applications/index.md
+  - Synthetic Data Generator: synthetic-data-generator/index.md

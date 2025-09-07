@@ -4,15 +4,19 @@ hide:
   - toc
 ---
 
-<div class="landing-hero" markdown>
+<div class="hero">
 
-# **Data Governance** - Deliverables and Accelerators
-<p class="subtitle">Optimized, reusable building blocks for data &amp; AI delivery</p>
-
-[View Data Governance](data-governance/index.md){ .md-button .md-button--primary }
-[Explore Accelerators](#accelerators){ .md-button }
+  <img src="_assets/aldin-logo.png" alt="Aldin AI logo">
+  <h1>Aldin AI Accelerators</h1>
+  <p class="subtitle">Accelerating AI use for Data, Companies & Learners</p>
+  <p>
+    <a class="md-button md-button--primary" href="data-governance/index.md">View Data Governance</a>
+    <a class="md-button" href="#accelerators">Explore Accelerators</a>
+  </p>
 
 </div>
+
+---
 
 ## Explore the accelerators { #accelerators }
 
@@ -43,4 +47,3 @@ hide:
   [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
 
 </div>
-

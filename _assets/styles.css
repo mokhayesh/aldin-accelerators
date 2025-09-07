@@ -1,0 +1,143 @@
+﻿/* =========================================================
+   Aldin AI brand theme (purple) + header banner integration
+   ========================================================= */
+
+:root {
+  --brand-navy:     #0c0a2b;
+  --brand-violet:   #4e31bf;
+  --brand-electric: #7b2cff;
+
+  --md-primary-fg-color: var(--brand-violet);
+  --md-primary-fg-color--light: #8a63ff;
+  --md-primary-fg-color--dark:  #3a1db3;
+  --md-accent-fg-color: var(--brand-electric);
+}
+
+/* Header uses the Aldin AI banner; path is relative to this file (docs/_assets/) */
+.md-header {
+  background:
+    linear-gradient(90deg, rgba(12,10,43,.92) 0%, rgba(78,49,191,.65) 58%, rgba(123,44,255,.45) 100%),
+    url("Aldin AI-banner.png") right center / cover no-repeat; /* â† fixed */
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+.md-tabs {
+  background: linear-gradient(90deg, rgba(12,10,43,.85), rgba(78,49,191,.55));
+  color: #fff;
+}
+
+.md-header .md-logo img {
+  height: 22px;
+  width: auto;
+  margin-right: .35rem;
+}
+
+.md-header .md-search__form {
+  background-color: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: saturate(140%) blur(2px);
+}
+.md-header .md-search__input { color: #fff; }
+
+/* Hero */
+.landing-hero {
+  margin: 1.25rem 0 1.5rem 0;
+  padding: clamp(18px, 4vw, 28px);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(112,84,255,.06), rgba(112,84,255,.02));
+  border: 1px solid rgba(112,84,255,.25);
+  box-shadow: 0 8px 28px rgba(0,0,0,.06);
+}
+.landing-hero h1 {
+  margin: 0 0 .25rem 0;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  line-height: 1.1;
+}
+.landing-hero .subtitle {
+  margin: 0 0 .8rem 0;
+  opacity: .85;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+}
+.landing-hero .cta .md-button { margin-right: .5rem; }
+
+/* Buttons */
+a.md-button--primary,
+.md-typeset .md-button.md-button--primary {
+  background: linear-gradient(120deg, var(--brand-violet), var(--brand-electric));
+  color: #fff !important;
+  border: 0;
+  box-shadow: 0 6px 14px rgba(123,44,255,.25);
+}
+a.md-button--primary:hover,
+.md-typeset .md-button.md-button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(123,44,255,.35);
+}
+a.md-button,
+.md-typeset .md-button {
+  border-color: var(--brand-violet);
+}
+a.md-button:hover,
+.md-typeset .md-button:hover {
+  border-color: var(--brand-electric);
+  color: var(--brand-electric) !important;
+}
+
+/* Cards & tables */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+}
+
+.md-typeset table:not([class]) {
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: .95rem;
+}
+.md-typeset table:not([class]) thead th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+.md-typeset table:not([class]) tbody tr:nth-child(odd) td {
+  background: rgba(112,84,255,.03);
+}
+
+/* Optional: hide automatic 'Home' H1 if present */
+.md-content__inner > h1:first-child { display: none; }
+
+/* Images / figures */
+.md-typeset img.screenshot {
+  border-radius: 12px;
+  box-shadow: 0 14px 36px rgba(0,0,0,.18);
+  border: 1px solid rgba(112,84,255,.25);
+}
+.md-typeset figure figcaption {
+  text-align: center;
+  font-size: .9rem;
+  opacity: .8;
+  margin-top: .35rem;
+}
+
+/* Admonitions / tabs */
+.md-typeset .admonition { border-radius: 12px; }
+.md-typeset .admonition.tip { border-left: 4px solid var(--md-primary-fg-color); }
+.tabbed-set > .tabbed-content { border-radius: 12px; }
+
+/* Badge utility */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(112,84,255,.25);
+  background: rgba(112,84,255,.08);
+  font-size: .85rem;
+}
+

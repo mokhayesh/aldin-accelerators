@@ -1,17 +1,17 @@
-﻿theme:
+﻿site_name: Aldin Accelerators
+site_url: https://mokhayesh.github.io/aldin-accelerators
+repo_url: https://github.com/mokhayesh/aldin-accelerators
+repo_name: aldin-accelerators
+
+theme:
   name: material
   logo: _assets/aldin-logo.png
   favicon: _assets/aldin-favicon.png
-  font:
-    text: Poppins
-    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.top
     - navigation.tracking
     - header.autohide
-    - navigation.expand
-    - navigation.sections
     - content.code.copy
     - content.tooltips
     - toc.follow
@@ -24,3 +24,13 @@
 
 extra_css:
   - _assets/aldin-theme.css
+
+nav:
+  - Home: index.md
+  - Data Governance: data-governance/index.md
+  - Prompt Engineering: prompt-engineering/index.md
+  - Code Converter: code-converter/index.md
+  - Data Buddy: data-buddy/index.md
+  - MDM: mdm/index.md
+  - Sidecar Apps: sidecar-applications/index.md
+  - Synthetic Data Generator: synthetic-data-generator/index.md

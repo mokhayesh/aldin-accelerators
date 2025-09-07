@@ -19,7 +19,7 @@ Comprehensive solutions for maintaining consistent, accurate, and authoritative 
 ### 🧪 Synthetic Data Generator
 Generate realistic, privacy-preserving synthetic datasets to support testing, development, and advanced analytics — without compromising sensitive information.
 
-### 🧠 Data Buddy
+### 🧠 Data Genius
 A **frameworkless** and **configuration-free** data governance assistant. Simplify compliance, lineage tracking, and metadata management with an intuitive and intelligent solution.
 
 ### 🔄 Code Converter

@@ -4,17 +4,30 @@ hide:
   - toc
 ---
 
+<!-- =================== HERO =================== -->
 <div class="hero">
 
-  <img src="_assets/aldin-logo.png" alt="Aldin AI logo">
-  <h1>Aldin AI Accelerators</h1>
-  <p class="subtitle">Accelerating AI use for Data, Companies & Learners</p>
-  <p>
-    <a class="md-button md-button--primary" href="data-governance/index.md">View Data Governance</a>
-    <a class="md-button" href="#accelerators">Explore Accelerators</a>
-  </p>
+  <div class="hero__left">
+    <div class="hero__kicker">Custom Built Solutions</div>
+    <h1 class="hero__title">Aldin AI Accelerators</h1>
+    <p class="hero__subtitle">
+      Opinionated, reusable components for data & AI delivery — designed to help teams ship reliable, safe and fast.
+    </p>
+    <p class="hero__cta">
+      <a class="md-button md-button--primary" href="data-governance/index.md">View Data Governance</a>
+      <a class="md-button md-button--secondary" href="#accelerators">Explore Accelerators</a>
+    </p>
+  </div>
+
+  <div class="hero__art">
+    <img class="hero__logo" src="_assets/aldin-logo.png" alt="Aldin AI logo">
+  </div>
 
 </div>
+<!-- ================ /HERO ===================== -->
+
+<!-- Keep your existing sections below (accelerators grid, etc.) -->
+
 
 ---
 

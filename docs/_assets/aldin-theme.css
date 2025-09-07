@@ -1,45 +1,70 @@
-:root {
-  --aldin-bg:        #0d141a;
-  --aldin-surface:   #111a20;
-  --aldin-card:      #151f27;
-  --aldin-primary:   #18d4e0;  /* neon cyan */
-  --aldin-accent:    #b26cff;  /* purple */
-  --aldin-ink:       #e6f0f2;
-  --aldin-ink-dim:   #b7c5cc;
-  --aldin-border:    #20303a;
+/* === Aldin AI Theme Overrides === */
+
+/* Background */
+body {
+  background-color: #18d4e0; /* cyan background */
+  color: #0d141a;           /* dark navy text */
 }
 
-[data-md-color-scheme="aldin-dark"] {
-  --md-default-bg-color: var(--aldin-bg);
-  --md-default-fg-color: var(--aldin-ink);
-  --md-default-fg-color--light: var(--aldin-ink-dim);
-  --md-primary-fg-color: var(--aldin-primary);
-  --md-accent-fg-color: var(--aldin-accent);
+/* Header / Navigation bar */
+.md-header, .md-tabs {
+  background-color: #0d141a !important; /* dark navy */
+  color: #ffffff !important;
 }
 
-[data-md-color-scheme="aldin-light"] {
-  --md-default-bg-color: #f7fbfc;
-  --md-default-fg-color: #0f2a33;
-  --md-primary-fg-color: var(--aldin-primary);
-  --md-accent-fg-color: var(--aldin-accent);
+/* Nav links */
+.md-header a, .md-tabs a {
+  color: #ffffff !important;
+}
+.md-header a:hover, .md-tabs a:hover {
+  color: #b26cff !important; /* purple highlight */
 }
 
-.hero {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 3rem 1rem 2rem;
+/* Active nav link */
+.md-tabs__link--active {
+  color: #18d4e0 !important; /* cyan for active link */
+  font-weight: bold;
 }
-.hero img {
-  width: clamp(160px, 25vw, 260px);
-  border-radius: 16px;
-  box-shadow: 0 10px 30px #18d4e033;
+
+/* Main content area */
+.md-content {
+  background-color: #ffffff;
+  color: #0d141a;
+  border-radius: 8px;
+  padding: 1rem;
 }
-.hero h1 {
-  margin: 1rem 0 0.5rem;
-  color: var(--aldin-ink);
+
+/* Cards / feature blocks */
+.md-typeset .card {
+  background-color: #ffffff;
+  color: #0d141a;
+  border: 1px solid #0d141a;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
 }
-.hero p {
-  color: var(--aldin-ink-dim);
-  font-size: 1.1rem;
+.md-typeset .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Buttons */
+.md-button {
+  background-color: #b26cff; /* purple */
+  color: #ffffff !important;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+}
+.md-button:hover {
+  background-color: #18d4e0;
+  color: #0d141a !important;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #0d141a;
+  color: #ffffff;
+}
+.md-footer a {
+  color: #18d4e0;
 }

@@ -1,70 +1,127 @@
-/* === Aldin AI Theme Overrides === */
+/* Aldin theme — clean dark with cyan/purple accents */
 
-/* Background */
-body {
-  background-color: #18d4e0; /* cyan background */
-  color: #0d141a;           /* dark navy text */
-}
-
-/* Header / Navigation bar */
-.md-header, .md-tabs {
-  background-color: #0d141a !important; /* dark navy */
-  color: #ffffff !important;
-}
-
-/* Nav links */
-.md-header a, .md-tabs a {
-  color: #ffffff !important;
-}
-.md-header a:hover, .md-tabs a:hover {
-  color: #b26cff !important; /* purple highlight */
+/* Brand tokens */
+:root {
+  --aldin-bg:        #0d141a;  /* dark navy */
+  --aldin-surface:   #121a21;  /* surface cards/nav */
+  --aldin-card:      #151f27;  /* slightly lighter surface */
+  --aldin-primary:   #18d4e0;  /* cyan */
+  --aldin-accent:    #b26cff;  /* purple */
+  --aldin-ink:       #e6f0f2;  /* off-white text */
+  --aldin-ink-dim:   #b7c5cc;
+  --aldin-border:    #22313b;
 }
 
-/* Active nav link */
-.md-tabs__link--active {
-  color: #18d4e0 !important; /* cyan for active link */
-  font-weight: bold;
+/* Apply to slate (dark) scheme */
+[data-md-color-scheme="slate"],
+[data-md-color-scheme="default"] {
+  --md-default-bg-color:            var(--aldin-bg);
+  --md-default-fg-color:            var(--aldin-ink);
+  --md-default-fg-color--light:     var(--aldin-ink-dim);
+  --md-primary-fg-color:            var(--aldin-primary);
+  --md-primary-fg-color--light:     #61e8ef;
+  --md-accent-fg-color:             var(--aldin-accent);
+
+  --md-code-bg-color:               #0b1116;
+  --md-code-fg-color:               #d7e6ea;
 }
 
-/* Main content area */
-.md-content {
-  background-color: #ffffff;
-  color: #0d141a;
-  border-radius: 8px;
-  padding: 1rem;
+/* Header: dark with a subtle cyan accent line */
+.md-header {
+  background: linear-gradient(180deg, #0c141a 0%, #0b1116 100%);
+  border-bottom: 1px solid var(--aldin-border);
+}
+.md-header__inner::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 2px;
+  background: var(--aldin-primary);
+  opacity: .6;
 }
 
-/* Cards / feature blocks */
-.md-typeset .card {
-  background-color: #ffffff;
-  color: #0d141a;
-  border: 1px solid #0d141a;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
+/* Logo sizing in header */
+.md-header .md-logo img {
+  height: 26px;             /* was tiny; make readable but not huge */
+  width: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #18d4e033;
 }
-.md-typeset .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+/* Top tabs / nav links */
+.md-tabs, .md-tabs__list {
+  background: transparent;
+}
+.md-tabs__link {
+  color: var(--aldin-ink-dim);
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--aldin-primary);
+}
+
+/* Page container width & spacing for nicer composition */
+.md-main__inner {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Cards / sections */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset .grid > .card,
+.md-content__inner > :where(section, div, article) {
+  background: var(--aldin-surface);
+  border: 1px solid var(--aldin-border);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
 /* Buttons */
-.md-button {
-  background-color: #b26cff; /* purple */
-  color: #ffffff !important;
-  border-radius: 6px;
-  padding: 0.6rem 1rem;
-  font-weight: bold;
+.md-button--primary,
+.md-typeset .md-button--primary {
+  background: var(--aldin-primary);
+  color: #001217 !important;
+  border: none;
 }
-.md-button:hover {
-  background-color: #18d4e0;
-  color: #0d141a !important;
+.md-typeset .md-button {
+  border-color: var(--aldin-border);
+}
+.md-button--primary:hover {
+  filter: brightness(1.05);
+}
+
+/* Hero block on index */
+.hero {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.hero img {
+  width: clamp(140px, 20vw, 220px);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px #18d4e033;
+}
+.hero h1 {
+  margin: .8rem 0 .4rem;
+  color: var(--aldin-ink);
+}
+.hero .subtitle {
+  color: var(--aldin-ink-dim);
+}
+
+/* Links */
+a {
+  color: var(--aldin-primary);
+}
+a:hover {
+  color: var(--aldin-accent);
 }
 
 /* Footer */
 .md-footer {
-  background-color: #0d141a;
-  color: #ffffff;
-}
-.md-footer a {
-  color: #18d4e0;
+  background: #0b1116;
+  border-top: 1px solid var(--aldin-border);
 }

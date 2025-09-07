@@ -1,4 +1,4 @@
-/* Aldin custom theme (Material for MkDocs) */
+﻿/* Aldin custom theme (Material for MkDocs) */
 
 /* --- Core brand colors --- */
 :root {
@@ -98,3 +98,4 @@
   color: var(--aldin-ink-dim);
   font-size: 1.1rem;
 }
+

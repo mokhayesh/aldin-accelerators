@@ -43,3 +43,4 @@
 - [:material-account-cog: Data Buddy](../data-buddy/index.md) — profiling, DQ, cataloging, anomalies  
 - [:material-puzzle: Sidecar Applications](../sidecar-applications/index.md) — architecture pattern used by the hub  
 - [:material-robot-excited: Synthetic Data Generator](../synthetic-data-generator/index.md) — test data for match/merge tuning
+

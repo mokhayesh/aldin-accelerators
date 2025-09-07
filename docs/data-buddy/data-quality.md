@@ -1,4 +1,4 @@
-# Data Quality
+﻿# Data Quality
 
 Ensure trusted data with **configurable rules, scorecards, alerts,** and a light stewardship workflow.
 
@@ -24,7 +24,7 @@ Ensure trusted data with **configurable rules, scorecards, alerts,** and a light
 
 <figure markdown>
   ![](../_assets/databuddy-quality-example.png){ .screenshot }
-  <figcaption>Data Buddy — Quality analysis with dimension scores, exceptions, and rules per field.</figcaption>
+  <figcaption>Data Buddy â€” Quality analysis with dimension scores, exceptions, and rules per field.</figcaption>
 </figure>
 
 ---
@@ -34,7 +34,7 @@ Ensure trusted data with **configurable rules, scorecards, alerts,** and a light
 === "UI"
     1. Select a **table/file**, then click **Quality**.  
     2. Pick a **rule pack** (or start with defaults per dimension).  
-    3. Review **scores & exceptions** → export CSV/JSON for evidence.
+    3. Review **scores & exceptions** â†’ export CSV/JSON for evidence.
 
 === "CLI (placeholder)"
     ```bash
@@ -66,3 +66,4 @@ rules:
     dimension: completeness
     expr: "address IS NOT NULL AND trim(address) <> ''"
     threshold: 0.999
+

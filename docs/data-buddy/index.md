@@ -19,3 +19,4 @@ A collection of utilities that speed up day-to-day data work across **profiling,
 # examples – replace with your real CLI/module names when ready
 python -m databuddy --help
 python -m databuddy profile data/customers.parquet
+

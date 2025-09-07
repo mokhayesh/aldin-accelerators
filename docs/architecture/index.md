@@ -102,3 +102,4 @@ Use these patterns to bake governance into delivery while staying fast:
 
 - Browse the **accelerators** to apply these patterns quickly.  
   [:octicons-arrow-right-16: Explore accelerators](../index.md#accelerators)
+

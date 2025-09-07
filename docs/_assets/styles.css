@@ -1,5 +1,5 @@
-/* =========================================================
-   Pellera brand theme (purple) + header banner integration
+﻿/* =========================================================
+   Aldin AI brand theme (purple) + header banner integration
    ========================================================= */
 
 :root {
@@ -13,11 +13,11 @@
   --md-accent-fg-color: var(--brand-electric);
 }
 
-/* Header uses the Pellera banner; path is relative to this file (docs/_assets/) */
+/* Header uses the Aldin AI banner; path is relative to this file (docs/_assets/) */
 .md-header {
   background:
     linear-gradient(90deg, rgba(12,10,43,.92) 0%, rgba(78,49,191,.65) 58%, rgba(123,44,255,.45) 100%),
-    url("pellera-banner.png") right center / cover no-repeat; /* ← fixed */
+    url("Aldin AI-banner.png") right center / cover no-repeat; /* â† fixed */
   color: #fff;
   box-shadow: 0 2px 12px rgba(0,0,0,.25);
 }
@@ -140,3 +140,4 @@ a.md-button:hover,
   background: rgba(112,84,255,.08);
   font-size: .85rem;
 }
+

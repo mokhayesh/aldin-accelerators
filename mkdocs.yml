@@ -1,11 +1,11 @@
-site_name: Data Governance - Deliverables and Accelerators
+﻿site_name: Data Governance - Deliverables and Accelerators
 repo_url: https://github.com/SalahMokhayesh/accelerators
 docs_dir: docs
 
 theme:
   name: material
-  logo: _assets/pellera-logo.png
-  favicon: _assets/pellera-logo.png
+  logo: _assets/Aldin AI-logo.png
+  favicon: _assets/Aldin AI-logo.png
   features:
     - navigation.tabs
     - navigation.sections
@@ -24,7 +24,7 @@ theme:
       accent: purple
 
 extra_css:
-  - _assets/styles.css   # ✔ stylesheet lives in docs/_assets/
+  - _assets/styles.css   # âœ” stylesheet lives in docs/_assets/
 
 plugins:
   - search
@@ -71,3 +71,4 @@ nav:
   - Project:
       - Contributing: contributing.md
       - Changelog: changelog.md
+

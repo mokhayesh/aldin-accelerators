@@ -1,4 +1,4 @@
-# Data Governance
+﻿# Data Governance
 
 Data Governance aligns people, process, and technology so data is **discoverable, trustworthy, compliant, and usable**.  
 Use this page as a quick brief for stakeholders and a map to the related accelerators.
@@ -20,13 +20,13 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   Controls and policies by geography/domain (e.g., GDPR, CCPA, GLBA); automate evidence.
 
 - :material-archive-lock: **Data Retention**  
-  Lifecycle policies for archiving/disposing data; support “right-to-erase” requests.
+  Lifecycle policies for archiving/disposing data; support â€œright-to-eraseâ€ requests.
 
 - :material-account-multiple-check: **Master Data Management (MDM)**  
   Golden records for key entities; survivorship rules; improved cross-system consistency.
 
 - :material-sitemap: **Data Architecture**  
-  The technical blueprint—zones, models, integrations (batch/stream/event), APIs, and IAM—that
+  The technical blueprintâ€”zones, models, integrations (batch/stream/event), APIs, and IAMâ€”that
   implements governance principles and enables reusable, scalable delivery.
 
 - :material-source-branch: **Data Lineage**  
@@ -43,9 +43,9 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 <!-- Scoped styling just for this table -->
 <style>
-/* Capability Matrix – Pellera banner look + compact, readable layout */
+/* Capability Matrix â€“ Aldin AI banner look + compact, readable layout */
 
-/* Match the banner/header gradient (deep indigo → Pellera purple → electric purple) */
+/* Match the banner/header gradient (deep indigo â†’ Aldin AI purple â†’ electric purple) */
 :root {
   --cap-header-gradient: linear-gradient(
     90deg,
@@ -86,7 +86,7 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 /* Balanced column widths (will be honored because of table-layout: fixed) */
 .cap-table thead th:nth-child(1) { width: 22%; }  /* Capability / Offerings   */
 .cap-table thead th:nth-child(2) { width: 36%; }  /* What It Means            */
-.cap-table thead th:nth-child(3) { width: 20%; }  /* Who’s Involved           */
+.cap-table thead th:nth-child(3) { width: 20%; }  /* Whoâ€™s Involved           */
 .cap-table thead th:nth-child(4) { width: 22%; }  /* Why It Matters           */
 
 .cap-table td {                  /* wrap long words/URLs to avoid scrolling */
@@ -100,13 +100,13 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 <div class="cap-table" markdown>
 
-| Capability / Offerings | What It Means | Who’s Involved | Why It Matters |
+| Capability / Offerings | What It Means | Whoâ€™s Involved | Why It Matters |
 |---|---|---|---|
 | **Metadata Management** | Create, update, and maintain metadata (data about data); build & operate the data catalog, including policies and lineage links. | Data Steward / Catalog Manager | Enables users to find & understand data; drives self-service analytics. |
 | **Data Profiling** | Sample analysis to surface structure, patterns, outliers; full-dataset assessment across dimensions (completeness, accuracy, uniqueness, validity, timeliness); custom rule definition. | Data Analyst / Steward | Quick health check; guides deeper quality efforts. |
 | **Data Quality** | Dimensions, rules, thresholds/SLAs; continuous monitoring, exceptions, and scorecards. | Data Quality Lead / Engineer | Ensures analytics & ML models use reliable data; reduces risk of bad decisions. |
 | **Data Compliance** | Policies & controls by geography/domain (e.g., GDPR, CCPA, GLBA). Evidence collection and attestation workflows. | Legal & Compliance Team | Avoids fines & lawsuits; supports rights to know/share/port/delete. |
-| **Data Retention** | Lifecycle policies for archiving/disposing data; defensible deletion; “right-to-erase” requests. | Records Manager / IT | Meets legal mandates; simplifies audits and e-discovery. |
+| **Data Retention** | Lifecycle policies for archiving/disposing data; defensible deletion; â€œright-to-eraseâ€ requests. | Records Manager / IT | Meets legal mandates; simplifies audits and e-discovery. |
 | **Master Data Management (MDM)** | Centralize & reconcile critical entity data (customers, products, suppliers). Golden record creation and survivorship rules. | MDM Lead / Architect | Single source of truth; improves cross-system consistency. |
 | **Data Architecture** | Technical blueprint: domain boundaries, data zones, canonical models, integration patterns (batch/stream/event), APIs, storage, compute, and IAM guardrails that implement governance. | Data / Platform Architect, Data Engineering Lead | Provides reusable patterns and platform guardrails for **scalable, secure, cost-effective** delivery; turns policy into practice. |
 | **Data Lineage** | End-to-end traceability of data (system, table, column). Technical + business lineage, change-impact analysis, and code-level drill-downs. | Data Engineer, Steward, Audit / Compliance | Builds trust and speeds issue resolution; supports audits and safe change management. |
@@ -114,3 +114,4 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 </div>
 
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
+

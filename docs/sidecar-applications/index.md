@@ -31,3 +31,4 @@
 - **Outputs:** curated tables/files, metrics, logs/evidence; registered in the catalog.  
 - **Security:** least-privilege creds; classification-driven access on outputs.  
 - **Ops:** schedule with a job runner or CI; emit metrics for health and value tracking.
+

@@ -43,3 +43,4 @@ hide:
   [:octicons-arrow-right-16: Open](synthetic-data-generator/index.md)
 
 </div>
+

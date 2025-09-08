@@ -47,7 +47,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
-# NEW contact info and footer section
+# Contact + global footer
 site_author: Salah Mokhayesh
 extra:
   contact:
@@ -67,9 +67,19 @@ extra:
       link: https://pellera.com
       name: pellera.com
   footer:
-    navigation:
-      - name: Contact
-        link: contact.md
+    content: |
+      <div style="background:#4A148C; color:#fff; padding:18px 12px; text-align:center; border-top: 3px solid #7E57C2;">
+        <p style="margin:0 0 6px 0; font-weight:600; font-size:16px;">
+          Salah Mokhayesh <span style="opacity:.9">| Lead Data Governance</span>
+        </p>
+        <p style="margin:0; opacity:.95;">Pellera Technologies</p>
+        <p style="margin:8px 0 10px 0;">
+          <span style="white-space:nowrap;">M 734-262-5040</span> &nbsp;|&nbsp;
+          <a href="mailto:Salah.Mokhayesh@pellera.com" style="color:#fff; text-decoration:underline;">Salah.Mokhayesh@pellera.com</a> &nbsp;|&nbsp;
+          <a href="https://pellera.com" style="color:#fff; text-decoration:underline;" target="_blank" rel="noopener">pellera.com</a>
+        </p>
+        <img src="_assets/signature.png" alt="Signature" style="max-height:72px; margin:6px auto 0; display:block; filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));">
+      </div>
 
 nav:
   - Home: index.md

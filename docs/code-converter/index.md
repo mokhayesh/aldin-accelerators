@@ -1,6 +1,10 @@
 ﻿# Code Converter
 
-# PL SQL to SparK SQL Code Converter Application
+
+# Accelerate Code Conversion
+![Code Converter Screenshot](../_assets/codeconverter-part0.png)
+
+# Application UI
 
 ![Code Converter Screenshot](../_assets/codeconverter-part1.png)
 

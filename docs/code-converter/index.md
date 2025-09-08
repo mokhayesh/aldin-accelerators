@@ -1,6 +1,6 @@
 ﻿# Code Converter
 
-![Code Converter Screenshot](codeconverter-part1.png)
+![Code Converter Screenshot](../_assets/codeconverter-part1.png)
 
 The Code Converter accelerator provides a streamlined way to reproduce complex logic in a consistent and repeatable fashion. By reducing the manual effort typically required—and minimizing reliance on specialized tribal knowledge—the tool significantly accelerates the conversion of complex Oracle SQL into Spark SQL or other modern platforms.
 

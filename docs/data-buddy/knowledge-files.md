@@ -1,5 +1,6 @@
 # Knowledge Files
 
+# Referenceable Documentation integrated with Expert level Conversational AI Analysis and Insights
 Turn your documents into an on-demand expert. **Upload referenceable content** (policies, playbooks, specs, spreadsheets, PDFs, markdown, etc.) and let a **conversational AI** answer questions, summarize, generate checklists, and point you to the exact source passages.
 
 <div class="grid cards" markdown>

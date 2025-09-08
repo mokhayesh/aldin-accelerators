@@ -1,9 +1,10 @@
 # Compliance
 
 # Advanced Configurable Data Compliance
-
-![Compliance Screenshot](../_assets/compliance.png)
 ![Compliance Graphic](../_assets/compliance-illustration.png)
+# Example UI
+![Compliance Screenshot](../_assets/compliance.png)
+
 
 The Compliance accelerator ensures that organizational policies and regulatory requirements (e.g., GDPR, CCPA, GLBA) are met consistently and automatically.  
 By integrating compliance checks directly into the Data Buddy workflow, teams can proactively identify risks, validate against service-level agreements (SLAs), and generate auditable reports without relying on manual intervention.  

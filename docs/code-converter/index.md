@@ -1,7 +1,7 @@
 ﻿# Code Converter
 
 
-# Accelerate Code Conversion
+# Accelerated Code Conversion
 ![Code Converter Screenshot](../_assets/codeconverter-part0.png)
 
 # Application UI

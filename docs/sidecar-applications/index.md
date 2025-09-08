@@ -1,5 +1,7 @@
 ﻿# Sidecar Applications
 
+# Sidecar Applications as Accelerators and Deliverables
+
 > A **sidecar application** connects to an existing data source (data lake / warehouse / data mart), **collects data**, **performs an action**, and **redistributes the results** to another location or layer — **without** needing a heavy framework, pipeline, or config files.
 
 ## Why sidecar?

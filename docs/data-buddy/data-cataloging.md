@@ -1,5 +1,7 @@
 # Data Cataloging
 
+# Automated Metadata Management
+
 Build a **living data catalog in minutes** from any uploaded or connected dataset. Data Buddy uses AI to propose **Business Terms, Descriptions, Definitions, Data Types, Patterns, Example Data, Privacy Classifications, and Encryption Requirements** with **consistent terminology and expert tone**—so you can scale metadata management, enable stewardship, and improve **data quality & compliance** with **defined and configurable SLAs**.
 
 <div class="grid cards" markdown>
@@ -20,7 +22,7 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 
 ---
 
-## Example (UI)
+## Catalog Example (UI)
 
 <figure markdown>
   ![](../_assets/catalog.png){ .screenshot }

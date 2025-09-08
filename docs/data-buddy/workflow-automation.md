@@ -1,4 +1,7 @@
 # Workflow Automation
+
+# Configurable Automation of tasks and workflows
+
 ![Workflow Automation Graphic](../_assets/workflow-automation-illustration.png)
 # Workflow Automation Example UI
 ![Workflow Automation Screenshot](../_assets/todo.png)

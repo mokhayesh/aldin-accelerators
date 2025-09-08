@@ -1,5 +1,6 @@
 # Data Quality
 
+# High Performance Advanced Data Quality
 Ensure trusted data with **configurable rules, scorecards, alerts,** and a light stewardship workflow.
 
 <div class="grid cards" markdown>

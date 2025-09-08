@@ -1,5 +1,7 @@
 # Compliance
 
+# Advanced Configurable Data Compliance
+
 ![Compliance Screenshot](../_assets/compliance.png)
 ![Compliance Graphic](../_assets/compliance-illustration.png)
 

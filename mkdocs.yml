@@ -47,7 +47,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
-# NEW: contact info for header/footer and meta
+# NEW contact info and footer section
 site_author: Salah Mokhayesh
 extra:
   contact:
@@ -66,6 +66,10 @@ extra:
     - icon: material/web
       link: https://pellera.com
       name: pellera.com
+  footer:
+    navigation:
+      - name: Contact
+        link: contact.md
 
 nav:
   - Home: index.md

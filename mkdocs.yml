@@ -47,6 +47,26 @@ markdown_extensions:
   - toc:
       permalink: true
 
+# NEW: contact info for header/footer and meta
+site_author: Salah Mokhayesh
+extra:
+  contact:
+    name: "Salah Mokhayesh | Lead Data Governance"
+    org: "Pellera Technologies"
+    phone: "M 734-262-5040"
+    email: "Salah.Mokhayesh@pellera.com"
+    website: "https://pellera.com"
+  social:
+    - icon: material/email
+      link: mailto:Salah.Mokhayesh@pellera.com
+      name: Email Salah Mokhayesh
+    - icon: material/phone
+      link: tel:+17342625040
+      name: Call 734-262-5040
+    - icon: material/web
+      link: https://pellera.com
+      name: pellera.com
+
 nav:
   - Home: index.md
   - Data Governance:
@@ -71,3 +91,4 @@ nav:
   - Project:
       - Contributing: contributing.md
       - Changelog: changelog.md
+  - Contact: contact.md

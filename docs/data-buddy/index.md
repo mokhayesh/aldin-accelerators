@@ -1,5 +1,12 @@
 ﻿# Data Buddy
 
+## Data Buddy - Advanced Data Governance Application
+
+Data Buddy integrates intelligent assistance directly into daily work — **recommending improvements, automating task sequences, and optimizing outputs** without exposing sensitive code or requiring external AI services.
+
+![AI Everyday Tasks](../_assets/ai-everyday.png)
+
+---
 A collection of utilities that speed up day-to-day data work across **profiling, quality, cataloging, anomalies, compliance, automation, conversational AI**, and **knowledge files**.
 
 ---
@@ -20,13 +27,7 @@ Below is a screenshot of the **Data Buddy UI**, showing compliance checks, knowl
 
 ---
 
-## AI in Everyday Tasks
 
-Data Buddy integrates intelligent assistance directly into daily work — **recommending improvements, automating task sequences, and optimizing outputs** without exposing sensitive code or requiring external AI services.
-
-![AI Everyday Tasks](../_assets/ai-everyday.png)
-
----
 
 ## Quick links
 

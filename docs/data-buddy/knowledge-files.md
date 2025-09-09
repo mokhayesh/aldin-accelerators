@@ -1,5 +1,15 @@
 # Knowledge Files
 
+---
+
+## Example (UI)
+
+<figure markdown>
+  ![](../_assets/knowledgefile.png){ .screenshot }
+  <figcaption>Load a knowledge pack, then **ask in natural language** (e.g., “What are my vacation days?”). The assistant answers from your files and can export the response.</figcaption>
+</figure>
+
+---
 # Referenceable Documentation integrated with Expert level Conversational AI Analysis and Insights
 Turn your documents into an on-demand expert. **Upload referenceable content** (policies, playbooks, specs, spreadsheets, PDFs, markdown, etc.) and let a **conversational AI** answer questions, summarize, generate checklists, and point you to the exact source passages.
 

@@ -4,9 +4,9 @@ The **Conversational AI** module enables expert-level interactions directly with
 
 This creates a powerful AI copilot for governance tasks, providing guided troubleshooting, policy Q&A, and intelligent recommendations to accelerate data-driven workflows.
 
-![Conversational AI UI Screenshot](_assets/conversationalAI.png)
+![Conversational AI UI Screenshot](../_assets/conversationalAI.png)
 
-![Conversational AI Illustration](_assets/conversational-ai-illustration.png)
+![Conversational AI Illustration](../_assets/conversational-ai-illustration.png)
 
 ## Tasks
 - RAG over catalog + policies  

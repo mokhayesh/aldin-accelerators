@@ -1,6 +1,6 @@
 # Anomaly Detection
 
-![Anomaly Detection](_assets/anomaly-detection.png)
+![Anomaly Detection](../_assets/anomaly-detection.png)
 
 The **Anomaly Detection** module analyzes connected or uploaded datasets to identify irregularities, inconsistencies, or suspicious patterns that may indicate errors, compliance issues, or risks. Beyond simply flagging anomalies, it also prescribes actionable recommendations for remediation, empowering teams to quickly address issues, maintain trust in their data, and continuously improve processes.
 

@@ -1,7 +1,8 @@
 # Data Profiling
 
 # High Performance Advanced Data Profiling
-![Data Profiling](_assets/dp_600.png){ width="600" }
+![Data Profiling](../_assets/dp.png){ width="600" }
+
 Get a fast understanding of a dataset’s **shape, quality, and risk** before you build rules or dashboards.
 
 <div class="grid cards" markdown>

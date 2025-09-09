@@ -8,3 +8,6 @@ Lead Data Governance — Pellera Technologies
 - **W**: [pellera.com](https://pellera.com)
 
 > For project inquiries, workshops, or accelerator demos, please reach out via email or phone.
+
+![Signature](../_assets/signature.png){: style="max-height:100px; margin-top:12px;" }
+

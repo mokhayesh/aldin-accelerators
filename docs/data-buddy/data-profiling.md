@@ -1,7 +1,7 @@
 # Data Profiling
 
 # High Performance Advanced Data Profiling
-![Data Profiling](../_assets/dp.png){ width="600" height="300" }
+![Data Profiling](../_assets/dp.png){ width="600" height="200" }
 
 Get a fast understanding of a dataset’s **shape, quality, and risk** before you build rules or dashboards.
 

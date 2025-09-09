@@ -1,15 +1,18 @@
-
-## `docs/data-buddy/conversational-ai.md`
-```markdown
 # Conversational AI
 
-Chat over datasets, rules, and docs; expose governance knowledge via Q&A and copilots.
+The **Conversational AI** module enables expert-level interactions directly with your data. The chatbot can analyze and interact with datasets, reference documentation, or any files uploaded to the Knowledge Files section. By leveraging expert personas, it can not only answer questions but also perform actions on the dataset—such as profiling, compliance checks, or anomaly detection—while explaining its reasoning in context.
+
+This creates a powerful AI copilot for governance tasks, providing guided troubleshooting, policy Q&A, and intelligent recommendations to accelerate data-driven workflows.
+
+![Conversational AI UI Screenshot](_assets/conversationalAI.png)
+
+![Conversational AI Illustration](_assets/conversational-ai-illustration.png)
 
 ## Tasks
-- RAG over catalog + policies
-- Guided troubleshooting
-- Red-teaming prompts
+- RAG over catalog + policies  
+- Guided troubleshooting  
+- Red-teaming prompts  
 
-## Example (placeholder)
+## Example
 ```bash
 python -m databuddy chat --kb ./knowledge --seed "Show failed DQ rules last week"

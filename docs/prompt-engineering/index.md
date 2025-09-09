@@ -1,5 +1,7 @@
 # Prompt Engineering
 
+# Prompt Engineering
+
 ![Prompt Engineering Screenshot](../_assets/prompt-engineering-example.png)
 
 Prompt Engineering provides a systematic way to design prompts and context pipelines that are **accurate, safe, and testable**—ensuring conversational and generative features behave like products, not demos.  

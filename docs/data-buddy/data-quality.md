@@ -1,6 +1,7 @@
 # Data Quality
 
 # High Performance Advanced Data Quality
+![Customizable Data Quality Rules and Measures](../_assets/dq.png)
 Ensure trusted data with **configurable rules, scorecards, alerts,** and a light stewardship workflow.
 
 <div class="grid cards" markdown>

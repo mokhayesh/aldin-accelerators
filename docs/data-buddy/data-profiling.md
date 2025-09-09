@@ -1,7 +1,7 @@
 # Data Profiling
 
 # High Performance Advanced Data Profiling
-
+![Customizable Data Profiling Statistics](../_assets/dp.png)
 Get a fast understanding of a dataset’s **shape, quality, and risk** before you build rules or dashboards.
 
 <div class="grid cards" markdown>

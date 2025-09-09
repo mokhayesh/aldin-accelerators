@@ -1,7 +1,7 @@
 ﻿# Master Data Management (MDM) Hub
 
 # Master Data Management (MDM)
-
+![Master Data Management](../_assets/mdm.png)
 > A **sidecar-style MDM hub** connects to a data source that aggregates multiple third-party vendor systems (**ERPs**), **pulls** the records into the hub, **matches & merges** them to produce a **Golden Record**, and then **redistributes** those Golden Records back to the sources for reconciliation and to downstream destinations (e.g., curated/reporting layers) for analytics and accounting—**without** standing up a heavy framework, pipeline, or config files.
 
 ## Why an MDM hub?

@@ -15,10 +15,9 @@ This creates a powerful AI copilot for governance tasks, providing guided troubl
 
 
 ## Tasks
-- RAG over catalog + policies  
-- Guided troubleshooting  
-- Red-teaming prompts  
+- Assess the Quality of my data set 
+- Create Features, Stories, Tasks to improve my Data's Quality 
+- Recommend Resources per task
+- Produce a Roadmap 
 
-## Example
-```bash
-python -m databuddy chat --kb ./knowledge --seed "Show failed DQ rules last week"
+

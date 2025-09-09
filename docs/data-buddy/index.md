@@ -1,5 +1,4 @@
 ﻿# Data Buddy
-
 ## Data Buddy - Advanced Data Governance Application
 
 Data Buddy integrates intelligent assistance directly into daily work — **recommending improvements, automating task sequences, and optimizing outputs** without exposing sensitive code or requiring external AI services.

@@ -1,7 +1,7 @@
 # Data Quality
 
 # High Performance Advanced Data Quality
-![Data Quality](../_assets/dq.png){ width="400" }
+![Data Quality](../_assets/dq.png){ width="375" }
 
 
 Ensure trusted data with **configurable rules, scorecards, alerts,** and a light stewardship workflow.

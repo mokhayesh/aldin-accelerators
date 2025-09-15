@@ -8,7 +8,6 @@ For project inquiries, workshops, or accelerator demos, please reach out via ema
 - **M**: 734-262-5040  
 - **E**: [Salah.Mokhayesh@pellera.com](mailto:Salah.Mokhayesh@pellera.com)  
 - **W**: [pellera.com](https://pellera.com)
-
 ---
 
 

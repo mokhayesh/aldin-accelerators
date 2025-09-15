@@ -13,7 +13,7 @@
 ## High-level architecture
 
 <figure markdown>
-  ![](../_assets/sidecar-architecture.png){ .screenshot }
+  ![](../_assets/sidecar-arch.png){ .screenshot }
   <figcaption>Sidecar Applications / Accelerators — read from the production lake, perform an action, push curated results, catalog, and query.</figcaption>
 </figure>
 

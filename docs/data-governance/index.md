@@ -111,7 +111,7 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
     const a = document.createElement('a');
     a.id = 'toc-download-link';
     a.className = 'md-nav__link';
-    a.href = '../_assets/data-governance-deck.pptx';  // docs/_assets/data-governance-deck.pptx
+    a.href = '../../_assets/data-governance-deck.pptx';  // docs/../_assets/data-governance-deck.pptx
     a.setAttribute('download', '');
     a.textContent = 'Download PPT deck';
 
@@ -130,3 +130,5 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   #toc-download-link { font-weight: 600; }
   #toc-download-link::before { content: "⬇️ "; }
 </style>
+
+[⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

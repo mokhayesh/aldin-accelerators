@@ -110,11 +110,42 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 | **Master Data Management (MDM)** | Centralize & reconcile critical entity data (customers, products, suppliers). Golden record creation and survivorship rules. | MDM Lead / Architect | Single source of truth; improves cross-system consistency. |
 | **Data Architecture** | Technical blueprint: domain boundaries, data zones, canonical models, integration patterns (batch/stream/event), APIs, storage, compute, and IAM guardrails that implement governance. | Data / Platform Architect, Data Engineering Lead | Provides reusable patterns and platform guardrails for **scalable, secure, cost-effective** delivery; turns policy into practice. |
 | **Data Lineage** | End-to-end traceability of data (system, table, column). Technical + business lineage, change-impact analysis, and code-level drill-downs. | Data Engineer, Steward, Audit / Compliance | Builds trust and speeds issue resolution; supports audits and safe change management. |
+<!-- Inject a direct download link into the right-hand Table of contents -->
+<script>
+  // Runs after each page render (incl. SPA navigations) in MkDocs Material
+  function addDownloadToToc() {
+    const tocList = document.querySelector('.md-nav--secondary .md-nav__list');
+    if (!tocList || document.getElementById('toc-download-link')) return;
+
+    const li = document.createElement('li');
+    li.className = 'md-nav__item';
+
+    const a = document.createElement('a');
+    a.id = 'toc-download-link';
+    a.className = 'md-nav__link';
+    a.href = '../_assets/data-governance-deck.pptx';  // file lives in docs/_assets
+    a.setAttribute('download', '');
+    a.textContent = 'Download PPT deck';
+
+    li.appendChild(a);
+    tocList.appendChild(li); // appends beneath your last ToC item (desired spot)
+  }
+
+  // MkDocs Material SPA hook
+  (window.document$ || { subscribe: fn => document.addEventListener('DOMContentLoaded', fn) })
+    .subscribe(addDownloadToToc);
+</script>
+
+<style>
+  /* Optional: make it stand out slightly in the ToC */
+  #toc-download-link { font-weight: 600; }
+  #toc-download-link::before { content: "⬇️ "; }
+</style>
 
 </div>
 
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
 
-## Download deck
+
 
 [⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

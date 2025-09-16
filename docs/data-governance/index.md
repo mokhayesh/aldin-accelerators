@@ -115,4 +115,6 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
 
+## Download deck
+
 [⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

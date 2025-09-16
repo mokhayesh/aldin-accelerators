@@ -37,15 +37,10 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 ---
 
-
-
 ## Capability matrix
 
 <!-- Scoped styling just for this table -->
 <style>
-/* Capability Matrix – Pellera banner look + compact, readable layout */
-
-/* Match the banner/header gradient (deep indigo → Pellera purple → electric purple) */
 :root {
   --cap-header-gradient: linear-gradient(
     90deg,
@@ -55,24 +50,19 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   );
 }
 
-.cap-table {                     /* shrink overall font a bit */
-  font-size: .92rem;
-}
-
-@media (max-width: 900px) {      /* a touch smaller on narrow screens */
-  .cap-table { font-size: .88rem; }
-}
+.cap-table { font-size: .92rem; }
+@media (max-width: 900px) { .cap-table { font-size: .88rem; } }
 
 .cap-table table {
   width: 100%;
-  table-layout: fixed;           /* prevents overflow; respects widths below */
+  table-layout: fixed;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
 
 .cap-table thead th {
-  background: var(--cap-header-gradient);  /* banner-matching header */
+  background: var(--cap-header-gradient);
   color: #fff;
   font-weight: 600;
 }
@@ -80,22 +70,16 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 .cap-table td,
 .cap-table th {
   vertical-align: top;
-  padding: .60rem .75rem;        /* slightly tighter to fit more content */
+  padding: .60rem .75rem;
 }
 
-/* Balanced column widths (will be honored because of table-layout: fixed) */
-.cap-table thead th:nth-child(1) { width: 22%; }  /* Capability / Offerings   */
-.cap-table thead th:nth-child(2) { width: 36%; }  /* What It Means            */
-.cap-table thead th:nth-child(3) { width: 20%; }  /* Who’s Involved           */
-.cap-table thead th:nth-child(4) { width: 22%; }  /* Why It Matters           */
+.cap-table thead th:nth-child(1) { width: 22%; }
+.cap-table thead th:nth-child(2) { width: 36%; }
+.cap-table thead th:nth-child(3) { width: 20%; }
+.cap-table thead th:nth-child(4) { width: 22%; }
 
-.cap-table td {                  /* wrap long words/URLs to avoid scrolling */
-  word-break: break-word;
-}
-
-.cap-table tbody tr:nth-child(odd) td {
-  background: rgba(112,84,255,.03);
-}
+.cap-table td { word-break: break-word; }
+.cap-table tbody tr:nth-child(odd) td { background: rgba(112,84,255,.03); }
 </style>
 
 <div class="cap-table" markdown>
@@ -110,9 +94,13 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 | **Master Data Management (MDM)** | Centralize & reconcile critical entity data (customers, products, suppliers). Golden record creation and survivorship rules. | MDM Lead / Architect | Single source of truth; improves cross-system consistency. |
 | **Data Architecture** | Technical blueprint: domain boundaries, data zones, canonical models, integration patterns (batch/stream/event), APIs, storage, compute, and IAM guardrails that implement governance. | Data / Platform Architect, Data Engineering Lead | Provides reusable patterns and platform guardrails for **scalable, secure, cost-effective** delivery; turns policy into practice. |
 | **Data Lineage** | End-to-end traceability of data (system, table, column). Technical + business lineage, change-impact analysis, and code-level drill-downs. | Data Engineer, Steward, Audit / Compliance | Builds trust and speeds issue resolution; supports audits and safe change management. |
+
+</div>
+
+> Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
+
 <!-- Inject a direct download link into the right-hand Table of contents -->
 <script>
-  // Runs after each page render (incl. SPA navigations) in MkDocs Material
   function addDownloadToToc() {
     const tocList = document.querySelector('.md-nav--secondary .md-nav__list');
     if (!tocList || document.getElementById('toc-download-link')) return;
@@ -123,29 +111,22 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
     const a = document.createElement('a');
     a.id = 'toc-download-link';
     a.className = 'md-nav__link';
-    a.href = '../_assets/data-governance-deck.pptx';  // file lives in docs/_assets
+    a.href = '../_assets/data-governance-deck.pptx';  // docs/_assets/data-governance-deck.pptx
     a.setAttribute('download', '');
     a.textContent = 'Download PPT deck';
 
     li.appendChild(a);
-    tocList.appendChild(li); // appends beneath your last ToC item (desired spot)
+    tocList.appendChild(li);
   }
 
-  // MkDocs Material SPA hook
-  (window.document$ || { subscribe: fn => document.addEventListener('DOMContentLoaded', fn) })
-    .subscribe(addDownloadToToc);
+  // SPA-safe hook (Material); fallback to DOMContentLoaded if not present
+  (window.document$ && window.document$.subscribe
+    ? window.document$.subscribe(addDownloadToToc)
+    : document.addEventListener('DOMContentLoaded', addDownloadToToc));
 </script>
 
 <style>
-  /* Optional: make it stand out slightly in the ToC */
+  /* Optional: emphasize the ToC link */
   #toc-download-link { font-weight: 600; }
   #toc-download-link::before { content: "⬇️ "; }
 </style>
-
-</div>
-
-> Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
-
-
-
-[⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

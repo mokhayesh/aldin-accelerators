@@ -50,6 +50,10 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   );
 }
 
+/* Hide the download section in the article, but keep it in the ToC */
+.md-content h2#download-deck,
+.md-content p.download-inline { display: none; }
+
 .cap-table { font-size: .92rem; }
 @media (max-width: 900px) { .cap-table { font-size: .88rem; } }
 
@@ -97,38 +101,9 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 </div>
 
+## Download deck {#download-deck}
+<p class="download-inline">
+  <a href="../_assets/data-governance-deck.pptx" download>⬇️ Download the PowerPoint deck</a>
+</p>
+
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
-
-<!-- Inject a direct download link into the right-hand Table of contents -->
-<script>
-  function addDownloadToToc() {
-    const tocList = document.querySelector('.md-nav--secondary .md-nav__list');
-    if (!tocList || document.getElementById('toc-download-link')) return;
-
-    const li = document.createElement('li');
-    li.className = 'md-nav__item';
-
-    const a = document.createElement('a');
-    a.id = 'toc-download-link';
-    a.className = 'md-nav__link';
-    a.href = '../../_assets/data-governance-deck.pptx';  // docs/../_assets/data-governance-deck.pptx
-    a.setAttribute('download', '');
-    a.textContent = 'Download PPT deck';
-
-    li.appendChild(a);
-    tocList.appendChild(li);
-  }
-
-  // SPA-safe hook (Material); fallback to DOMContentLoaded if not present
-  (window.document$ && window.document$.subscribe
-    ? window.document$.subscribe(addDownloadToToc)
-    : document.addEventListener('DOMContentLoaded', addDownloadToToc));
-</script>
-
-<style>
-  /* Optional: emphasize the ToC link */
-  #toc-download-link { font-weight: 600; }
-  #toc-download-link::before { content: "⬇️ "; }
-</style>
-
-[⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

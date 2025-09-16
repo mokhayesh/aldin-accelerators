@@ -117,4 +117,4 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 ## Download deck
 
-[⬇️ Download the PowerPoint deck](_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }
+[⬇️ Download the PowerPoint deck](../_assets/data-governance-deck.pptx){ .md-button .md-button--primary download }

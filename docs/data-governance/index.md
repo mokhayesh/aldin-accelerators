@@ -50,9 +50,9 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   );
 }
 
-/* Hide the download section in the article, but keep it in the ToC */
-.md-content h2#download-deck,
-.md-content p.download-inline { display: none; }
+/* Optional: emphasize the ToC download link we'll inject */
+#toc-download-link { font-weight: 600; }
+#toc-download-link::before { content: "⬇️ "; }
 
 .cap-table { font-size: .92rem; }
 @media (max-width: 900px) { .cap-table { font-size: .88rem; } }
@@ -105,5 +105,24 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 <p class="download-inline">
   <a href="../_assets/data-governance-deck.pptx" download>⬇️ Download the PowerPoint deck</a>
 </p>
+
+<!-- Make the ToC item itself trigger the download -->
+<script>
+(function () {
+  function hook() {
+    var tocLink = document.querySelector('.md-nav--secondary a[href="#download-deck"]');
+    if (!tocLink) return;
+    tocLink.id = 'toc-download-link';
+    tocLink.href = '../_assets/data-governance-deck.pptx';   // from docs/data-governance/ → docs/_assets/
+    tocLink.setAttribute('download', '');
+    tocLink.textContent = 'Download PPT deck';
+  }
+  if (window.document$ && window.document$.subscribe) {
+    window.document$.subscribe(hook);
+  } else {
+    document.addEventListener('DOMContentLoaded', hook);
+  }
+})();
+</script>
 
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.

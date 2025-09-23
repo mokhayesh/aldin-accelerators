@@ -52,5 +52,11 @@ Ensure trusted data with **configurable rules, scorecards, alerts,** and a light
 ---
 
 ## Rule packs (example)
-![Data Quality](../_assets/dqrules.png){ width="375" }
+![Data Quality](../_assets/dqrules.png)
+
+
+
+
+## Quality Rule Assignment Example (UI)
+![Data Quality Rules](../_assets/rules.png)
 

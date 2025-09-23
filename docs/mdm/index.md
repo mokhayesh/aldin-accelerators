@@ -10,6 +10,12 @@
 - :material-shield-check: **Governed & auditable** — stewardship workflow, lineage, and evidence for audits.
 - :material-speedometer: **Fast to adopt** — run as a sidecar app; no changes to existing ETL.
 
+# Example UI - Part 1
+![MDM Example](../_assets/mdm-example.png)
+
+# Example UI - Part 2
+![MDM Example](../_assets/mdm-example2.png)
+
 ## High-level architecture
 
 <figure markdown>

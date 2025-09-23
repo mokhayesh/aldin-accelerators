@@ -16,5 +16,3 @@ The **Anomaly Detection** module analyzes connected or uploaded datasets to iden
 ![Data Profiling](../_assets/anomaly.png){ width="375" }
 
 
-```bash
-python -m databuddy anomalies detect --metric dq_score --window 30 --method zscore

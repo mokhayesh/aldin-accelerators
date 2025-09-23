@@ -59,12 +59,3 @@ Turn your documents into an on-demand expert. **Upload referenceable content** (
 
 ---
 
-## Recommended structure
-
-```text
-knowledge/
-  glossary/
-  policies/
-  playbooks/
-  runbooks/
-  reference/

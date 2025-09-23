@@ -52,21 +52,5 @@ Ensure trusted data with **configurable rules, scorecards, alerts,** and a light
 ---
 
 ## Rule packs (example)
+![Data Quality](../_assets/dqrules.png){ width="375" }
 
-```yaml
-# dq/rules.yml
-rules:
-  - name: email_valid
-    dimension: validity
-    expr: "email ~ '^[^@]+@[^@]+\\.[^@]+$'"
-    threshold: 0.99
-
-  - name: phone_digits
-    dimension: consistency
-    expr: "length(regexp_replace(phone, '[^0-9]', '')) BETWEEN 10 AND 15"
-    threshold: 0.98
-
-  - name: address_not_blank
-    dimension: completeness
-    expr: "address IS NOT NULL AND trim(address) <> ''"
-    threshold: 0.999

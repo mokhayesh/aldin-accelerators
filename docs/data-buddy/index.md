@@ -43,9 +43,4 @@ Below is a screenshot of the **Data Buddy UI**, showing compliance checks, knowl
 
 ---
 
-## Quickstart
 
-```bash
-# examples – replace with your real CLI/module names when ready
-python -m databuddy --help
-python -m databuddy profile data/customers.parquet

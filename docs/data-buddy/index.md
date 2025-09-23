@@ -3,6 +3,8 @@
 
 Data Buddy integrates intelligent assistance directly into daily work — **recommending improvements, automating task sequences, and optimizing outputs** without exposing sensitive code or requiring external AI services.
 
+Data Buddy is a Python–AI hybrid that uses the right engine for the job - Python for precision, AI for insight. Deterministic workloads (profiling, data-quality rules) run in Python; probabilistic tasks (catalog enrichment, insight discovery, anomaly detection) run in AI.
+
 ![AI Everyday Tasks](../_assets/ai-everyday.png)
 
 ---

@@ -13,3 +13,6 @@ Synthetic data generation enables the creation of production-like datasets that 
 - **Redistributable**: Share and replicate synthetic datasets across environments, layers, or buckets without risk.  
 
 This approach accelerates development, testing, and analytics by providing safe, scalable, and reusable data assets.
+
+# Example UI 
+![MDM Example](../_assets/synthetic.png)

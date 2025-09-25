@@ -24,9 +24,7 @@ hide:
 
 - :material-robot-outline: **Custom LLM — aldin-mini**  
   Local, 1.5B-param Q4 model for data teams.  
-  **Shines at:** governance summaries, SQL/BI co-pilot, schema/contracts, MLOps docs.  
-  **Local & private:** runs via `llama_cpp.server`, OpenAI-compatible API.  
-  **Use with care:** 4k context; verify critical outputs; add app-level guardrails.  
+  **Shines at:** Data Governance, Data Architecture, Analytics/BI, MLOps/AI Engineering, Security/Compliance, Knowledge Management.  
   [:octicons-arrow-right-16: Open](custom-llm/)
 
 

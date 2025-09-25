@@ -22,10 +22,14 @@ hide:
   Patterns for structured prompts, grounding, guardrails, and evaluation to make LLM features **reliable, safe, and repeatable**.  
   [:octicons-arrow-right-16: Open](prompt-engineering/index.md)
 
-- :material-robot-outline: **Custom LLM**  
-  Domain-specific models with **RAG**, **LoRA fine-tuning**, **evaluation**, and **guardrails**.  
+- :material-robot-outline: **Custom LLM — aldin-mini**  
+  Local, 1.5B-param Q4 model for data teams.  
+  **Shines at:** governance summaries, SQL/BI co-pilot, schema/contracts, MLOps docs.  
+  **Local & private:** runs via `llama_cpp.server`, OpenAI-compatible API.  
+  **Use with care:** 4k context; verify critical outputs; add app-level guardrails.  
   [:octicons-arrow-right-16: Open](custom-llm/)
-  
+
+
 - :material-code-json: **Code Converter**  
   Oracle/PLSQL → Spark SQL utilities.  
   [:octicons-arrow-right-16: Open](code-converter/index.md)

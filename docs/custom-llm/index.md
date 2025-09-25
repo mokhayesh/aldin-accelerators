@@ -4,6 +4,8 @@ title: Model Card — aldin-mini
 
 # Model Card — **aldin-mini** (Qwen2.5-1.5B-Instruct, Q4_K_M)
 
+![aldin-mini](../_assets/LLM-aldin-mini.png)
+
 ## Overview
 - **Purpose:** Lightweight, **local-first** assistant tuned for data teams. Optimized for rapid drafting, analysis support, and **governance-aware** guidance without sending data to external clouds.  
 - **Primary domains:** Data Governance, Data Architecture, Analytics/BI, MLOps/AI Engineering, Security/Compliance, Knowledge Management, Developer Experience.  

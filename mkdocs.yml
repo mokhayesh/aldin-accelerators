@@ -88,6 +88,7 @@ nav:
       - Assessment Questions: data-governance/assessment.md
   - Accelerators:
       - Prompt Engineering: prompt-engineering/index.md
+      - Custom LLM: custom-llm/index.md      # ← added
       - Code Converter: code-converter/index.md
       - Data Buddy:
           - Overview: data-buddy/index.md

@@ -39,15 +39,22 @@ title: Model Card — aldin-mini
 ---
 
 ## Deployment
-- **Runtime:** `llama_cpp.server` (CPU)
 
-**Example start (Windows/PowerShell):**
+!!! info "Runtime"
+    **llama_cpp.server** (CPU). Fully local inference; no external network calls by default.
+
+=== "Windows (PowerShell)"
+
 ```powershell
+# Start aldin-mini via llama_cpp.server
+$MODEL = "C:\models\Qwen2.5-1.5B-Instruct-Q4_K_M.gguf"
+
 python -m llama_cpp.server `
-  --model "<path>\Qwen2.5-1.5B-Instruct-Q4_K_M.gguf" `
+  --model "$MODEL" `
   --model_alias aldin-mini `
   --host 10.0.0.108 --port 7871 `
   --chat_format qwen `
   --n_threads 14 --n_batch 1024 `
-  --n_ctx 4096 --cache true --cache_size 4096 `
-  [--api_key <key>]
+  --n_ctx 4096 `
+  --cache true --cache_size 4096 `
+  # --api_key <your-key>   # (optional)

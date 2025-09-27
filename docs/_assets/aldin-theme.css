@@ -1,0 +1,157 @@
+﻿/* ========== Aldin AI — Futuristic Dark Gray Theme ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@500;700&display=swap');
+
+:root {
+  --aldin-bg: #0b1116;          /* deep background */
+  --aldin-surface: #101820;     /* surfaces/nav */
+  --aldin-card: #131e27;
+  --aldin-primary: #444444;     /* dark gray primary accent */
+  --aldin-accent: #666666;      /* lighter gray secondary accent */
+  --aldin-ink: #e6f0f2;         /* off-white */
+  --aldin-ink-dim: #a8b7bf;
+  --aldin-border: #1e2a33;
+}
+
+/* Global font */
+html, body {
+  font-family: Orbitron, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--aldin-ink);
+}
+
+/* Headers and hero titles use Orbitron for a futuristic style */
+h1, h2, h3, h4, h5, h6,
+.hero__title {
+  font-family: Orbitron, Inter, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Header */
+.md-header {
+  background: linear-gradient(180deg, #0d141a 0%, #0b1217 100%);
+  border-bottom: 1px solid rgba(68,68,68,.4);
+  backdrop-filter: saturate(120%) blur(8px);
+}
+.md-header__inner::after {
+  content:"";
+  position:absolute; left:0; right:0; bottom:-1px; height:2px;
+  background:linear-gradient(90deg,transparent,var(--aldin-primary),transparent);
+  opacity:.45;
+}
+.md-header .md-logo img {
+  height:26px; border-radius:6px;
+  box-shadow:0 0 16px #44444444;
+}
+
+/* Tabs — BLACK font for clarity */
+.md-tabs__link,
+.md-nav__link {
+  color: #000000 !important;   /* black text */
+  font-weight: 600;
+  transition: color .25s ease;
+}
+.md-tabs__link:hover,
+.md-nav__link:hover {
+  color: var(--aldin-accent) !important;  /* gray hover */
+}
+.md-tabs__link--active,
+.md-nav__link--active {
+  color: var(--aldin-primary) !important; /* gray active */
+  font-weight: 700;
+}
+.md-tabs__link::after {
+  content:"";
+  position:absolute; left:0; bottom:-6px;
+  height:2px; width:0;
+  background:var(--aldin-primary);
+  transition:width .25s ease;
+}
+.md-tabs__link:hover::after,
+.md-tabs__link--active::after { width:100%; }
+
+/* Hero */
+.hero {
+  display:grid; grid-template-columns:1.1fr 1fr; gap:2.2rem;
+  align-items:center; padding:3.5rem 2rem 2rem; margin: 8px 0 16px;
+  background: radial-gradient(1200px 400px at 0% -20%, #1a1a1a 0%, transparent 60%),
+              radial-gradient(800px 300px at 100% 0%, #222 0%, transparent 65%);
+  border:1px solid var(--aldin-border);
+  border-radius:16px;
+}
+.hero__left { display:grid; gap:.75rem; }
+.hero__kicker {
+  color: var(--aldin-accent);
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:.8rem;
+}
+.hero__title {
+  font-family: Orbitron, Inter, sans-serif;
+  font-weight:700; line-height:1.1;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  color: var(--aldin-ink);
+  text-shadow:0 0 14px #44444444;
+}
+.hero__subtitle {
+  color: var(--aldin-ink-dim);
+  font-size:1.05rem;
+  max-width:52ch;
+}
+.hero__cta { display:flex; gap:.8rem; margin-top:.6rem; flex-wrap:wrap; }
+.hero__art { display:grid; place-items:center; }
+.hero__logo {
+  width: clamp(180px, 28vw, 260px);
+  border-radius:14px;
+  filter: drop-shadow(0 0 22px rgba(68,68,68,.7));
+  animation: glow 3s ease-in-out infinite;
+}
+@keyframes glow {
+  0%,100% { filter: drop-shadow(0 0 14px rgba(68,68,68,.5)); }
+  50% { filter: drop-shadow(0 0 30px rgba(68,68,68,.9)); }
+}
+
+/* Buttons — also Orbitron */
+.md-button--primary {
+  background: var(--aldin-primary);
+  color:#ffffff!important;
+  border:none; border-radius:10px;
+  padding:.65rem 1.1rem;
+  font-weight:700;
+  font-family: Orbitron, Inter, sans-serif;
+  transition: all .2s ease;
+}
+.md-button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow:0 0 24px #44444466;
+}
+.md-button--secondary {
+  border:1px solid var(--aldin-accent);
+  color:var(--aldin-accent)!important;
+  border-radius:10px;
+  font-family: Orbitron, Inter, sans-serif;
+}
+.md-button--secondary:hover { box-shadow:0 0 24px #66666655; }
+
+/* Cards */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset .grid > .card,
+.md-content__inner > :where(section,div,article) {
+  background:linear-gradient(180deg, rgba(16,24,32,.92), rgba(16,24,32,.86));
+  border:1px solid var(--aldin-border);
+  border-radius:14px;
+  box-shadow:0 18px 40px rgba(0,0,0,.24);
+}
+
+/* Footer */
+.md-footer {
+  background:#0b1217;
+  border-top:1px solid var(--aldin-border);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero { grid-template-columns:1fr; text-align:center; }
+  .hero__cta { justify-content:center; }
+}

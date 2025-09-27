@@ -1,8 +1,6 @@
-# Data Cataloging
+﻿# Data Cataloging
 
-# Automated Metadata Management
-![Metadata Management](../_assets/metadata.png)
-Build a **living data catalog in minutes** from any uploaded or connected dataset. Data Buddy uses AI to propose **Business Terms, Descriptions, Definitions, Data Types, Patterns, Example Data, Privacy Classifications, and Encryption Requirements** with **consistent terminology and expert tone**—so you can scale metadata management, enable stewardship, and improve **data quality & compliance** with **defined and configurable SLAs**.
+Build a **living data catalog in minutes** from any uploaded or connected dataset. Data Buddy uses AI to propose **Business Terms, Descriptions, Definitions, Data Types, Patterns, Example Data, Privacy Classifications, and Encryption Requirements** with **consistent terminology and expert tone**â€”so you can scale metadata management, enable stewardship, and improve **data quality & compliance** with **defined and configurable SLAs**.
 
 <div class="grid cards" markdown>
 
@@ -22,11 +20,11 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 
 ---
 
-## Catalog Example (UI)
+## Example (UI)
 
 <figure markdown>
   ![](../_assets/catalog.png){ .screenshot }
-  <figcaption>AI-generated catalog entries from a sample dataset—business terms, descriptions, definitions, types, patterns, example data, privacy classification, and encryption requirement.</figcaption>
+  <figcaption>AI-generated catalog entries from a sample datasetâ€”business terms, descriptions, definitions, types, patterns, example data, privacy classification, and encryption requirement.</figcaption>
 </figure>
 
 <figure markdown>
@@ -40,7 +38,7 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 
 === "UI"
     1. **Upload** a file or select a **connected table**.  
-    2. Click **Catalog** → Data Buddy **infers** the dictionary + classifications.  
+    2. Click **Catalog** â†’ Data Buddy **infers** the dictionary + classifications.  
     3. Switch to **Edit** to refine terms or add examples; set **SLA targets**.  
     4. **Save / Export** to CSV/JSON or sync to your enterprise catalog.
 
@@ -67,7 +65,7 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 - **Example Data**  
 - **Data Privacy Classification** (e.g., Public, Internal, Confidential, PII)  
 - **Encryption Requirement**  
-- **SLA Targets** (Quality, Completeness, Validity — configurable)
+- **SLA Targets** (Quality, Completeness, Validity â€” configurable)
 
 > Tip: keep short, action-oriented definitions; use example values that illustrate valid formats.
 
@@ -76,7 +74,7 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 ## Governance & stewardship
 
 - Assign **Owners/Stewards (RACI)** at domain or dataset level.  
-- Track **lineage** to connect catalog → DQ rules → dashboards.  
+- Track **lineage** to connect catalog â†’ DQ rules â†’ dashboards.  
 - Use **review queues** for changes; export **evidence bundles** for audits.  
 - Re-run inference when schemas evolve; differences become **catalog PRs**.
 
@@ -87,4 +85,7 @@ Build a **living data catalog in minutes** from any uploaded or connected datase
 - Turn catalog fields into **Data Quality** rules and scorecards.  
 - Surface definitions in **Knowledge Files** so conversational AI can answer using your catalog.  
 - Schedule periodic **profiling** and **anomaly detection** to keep SLAs on track.
+
+
+
 

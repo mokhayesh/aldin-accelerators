@@ -1,7 +1,5 @@
 ﻿# Sidecar Applications
 
-# Sidecar Applications as Accelerators and Deliverables
-
 > A **sidecar application** connects to an existing data source (data lake / warehouse / data mart), **collects data**, **performs an action**, and **redistributes the results** to another location or layer — **without** needing a heavy framework, pipeline, or config files.
 
 ## Why sidecar?
@@ -13,7 +11,7 @@
 ## High-level architecture
 
 <figure markdown>
-  ![](../_assets/sidecar-arch.png){ .screenshot }
+  ![](../_assets/sidecar-architecture.png){ .screenshot }
   <figcaption>Sidecar Applications / Accelerators — read from the production lake, perform an action, push curated results, catalog, and query.</figcaption>
 </figure>
 
@@ -33,3 +31,6 @@
 - **Outputs:** curated tables/files, metrics, logs/evidence; registered in the catalog.  
 - **Security:** least-privilege creds; classification-driven access on outputs.  
 - **Ops:** schedule with a job runner or CI; emit metrics for health and value tracking.
+
+
+

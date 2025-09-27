@@ -1,7 +1,5 @@
 ﻿# Master Data Management (MDM) Hub
 
-# Master Data Management (MDM)
-![Master Data Management](../_assets/mdm.png)
 > A **sidecar-style MDM hub** connects to a data source that aggregates multiple third-party vendor systems (**ERPs**), **pulls** the records into the hub, **matches & merges** them to produce a **Golden Record**, and then **redistributes** those Golden Records back to the sources for reconciliation and to downstream destinations (e.g., curated/reporting layers) for analytics and accounting—**without** standing up a heavy framework, pipeline, or config files.
 
 ## Why an MDM hub?
@@ -9,12 +7,6 @@
 - :material-swap-horizontal-bold: **Operational feedback** — push Golden Records back to originating ERPs to correct or reconcile.
 - :material-shield-check: **Governed & auditable** — stewardship workflow, lineage, and evidence for audits.
 - :material-speedometer: **Fast to adopt** — run as a sidecar app; no changes to existing ETL.
-
-# Example UI - Part 1
-![MDM Example](../_assets/mdm-example.png)
-
-# Example UI - Part 2
-![MDM Example](../_assets/mdm-example2.png)
 
 ## High-level architecture
 
@@ -48,6 +40,9 @@
 - **Ops:** scheduled or event-driven; idempotent processing; health & value KPIs (match rate, steward MTTR, golden coverage).  
 
 ## Related accelerators
-- [:material-account-cog: Data Buddy](../data-buddy/index.md) — profiling, DQ, cataloging, anomalies  
-- [:material-puzzle: Sidecar Applications](../sidecar-applications/index.md) — architecture pattern used by the hub  
-- [:material-robot-excited: Synthetic Data Generator](../synthetic-data-generator/index.md) — test data for match/merge tuning
+- [:material-account-cog: Data Buddy](../data-buddy//) — profiling, DQ, cataloging, anomalies  
+- [:material-puzzle: Sidecar Applications](../sidecar-applications//) — architecture pattern used by the hub  
+- [:material-robot-excited: Synthetic Data Generator](../synthetic-data-generator//) — test data for match/merge tuning
+
+
+

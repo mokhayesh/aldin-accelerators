@@ -48,19 +48,19 @@
 Use these patterns to bake governance into delivery while staying fast:
 
 - **Sidecar application** — connect to an existing source, perform an action, and publish results without new pipelines.  
-  [:octicons-arrow-right-16: Learn more](../sidecar-applications/index.md)
+  [:octicons-arrow-right-16: Learn more](../sidecar-applications//)
 
 - **Data Buddy** — profiling, **Data Quality** rules, **Cataloging**, anomalies, compliance evidence, conversational AI.  
-  [:octicons-arrow-right-16: Learn more](../data-buddy/index.md)
+  [:octicons-arrow-right-16: Learn more](../data-buddy//)
 
 - **MDM Hub** — match/merge to **Golden Records**; redistribute to sources and curated zones.  
-  [:octicons-arrow-right-16: Learn more](../mdm/index.md)
+  [:octicons-arrow-right-16: Learn more](../mdm//)
 
 - **Code Converter** — modernize SQL logic consistently (e.g., PL/SQL → Spark SQL).  
-  [:octicons-arrow-right-16: Learn more](../code-converter/index.md)
+  [:octicons-arrow-right-16: Learn more](../code-converter//)
 
 - **Synthetic Data Generator** — privacy-preserving test data for repeatable pipelines and QA.  
-  [:octicons-arrow-right-16: Learn more](../synthetic-data-generator/index.md)
+  [:octicons-arrow-right-16: Learn more](../synthetic-data-generator//)
 
 ---
 
@@ -98,7 +98,10 @@ Use these patterns to bake governance into delivery while staying fast:
 ### Where to go next
 
 - See the **Data Governance overview** for principles and capability map.  
-  [:octicons-arrow-right-16: Data Governance](../data-governance/index.md)
+  [:octicons-arrow-right-16: Data Governance](../data-governance//)
 
 - Browse the **accelerators** to apply these patterns quickly.  
-  [:octicons-arrow-right-16: Explore accelerators](../index.md#accelerators)
+  [:octicons-arrow-right-16: Explore accelerators](..//#accelerators)
+
+
+

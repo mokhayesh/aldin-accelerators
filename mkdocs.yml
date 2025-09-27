@@ -1,109 +1,40 @@
-site_name: Data Governance - Deliverables and Accelerators
-repo_url: https://github.com/SalahMokhayesh/accelerators
-docs_dir: docs
+﻿site_name: Aldin AI Custom Solutions
+site_url: https://mokhayesh.github.io/aldin-accelerators
+repo_url: https://github.com/mokhayesh/aldin-accelerators
+repo_name: aldin-accelerators
 
 theme:
   name: material
-  logo: _assets/pellera-logo.png
-  favicon: _assets/pellera-logo.png
+  logo: _assets/aldin-logo.png
+  favicon: _assets/aldin-favicon.png
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - header.autohide
+    - content.code.copy
+    - content.tooltips
+    - toc.follow
     - search.suggest
     - search.highlight
-    - content.code.copy
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: purple
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep purple
-      accent: purple
+    - scheme: slate
+      primary: custom
+      accent: custom
 
 extra_css:
-  - _assets/styles.css   # ✔ stylesheet lives in docs/_assets/
-
-plugins:
-  - search
-
-markdown_extensions:
-  - admonition
-  - def_list
-  - footnotes
-  - attr_list
-  - md_in_html
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
-
-# Contact + global footer
-site_author: Salah Mokhayesh
-extra:
-  contact:
-    name: "Salah Mokhayesh | Lead Data Governance"
-    org: "Pellera Technologies"
-    phone: "M 734-262-5040"
-    email: "Salah.Mokhayesh@pellera.com"
-    website: "https://pellera.com"
-  social:
-    - icon: material/email
-      link: mailto:Salah.Mokhayesh@pellera.com
-      name: Email Salah Mokhayesh
-    - icon: material/phone
-      link: tel:+17342625040
-      name: Call 734-262-5040
-    - icon: material/web
-      link: https://pellera.com
-      name: pellera.com
-  footer:
-    content: |
-      <div style="background:#4A148C; color:#fff; padding:18px 12px; text-align:center; border-top: 3px solid #7E57C2;">
-        <p style="margin:0 0 6px 0; font-weight:600; font-size:16px;">
-          Salah Mokhayesh <span style="opacity:.9">| Lead Data Governance</span>
-        </p>
-        <p style="margin:0; opacity:.95;">Pellera Technologies</p>
-        <p style="margin:8px 0 10px 0;">
-          <span style="white-space:nowrap;">M 734-262-5040</span> &nbsp;|&nbsp;
-          <a href="mailto:Salah.Mokhayesh@pellera.com" style="color:#fff; text-decoration:underline;">Salah.Mokhayesh@pellera.com</a> &nbsp;|&nbsp;
-          <a href="https://pellera.com" style="color:#fff; text-decoration:underline;" target="_blank" rel="noopener">pellera.com</a>
-        </p>
-        <img src="_assets/signature.png" alt="Signature" style="max-height:72px; margin:6px auto 0; display:block; filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));">
-      </div>
+  - _assets/aldin-theme.css
 
 nav:
   - Home: index.md
-  - Data Governance:
-      - Overview: data-governance/index.md
-      - Assessment Questions: data-governance/assessment.md
-  - Accelerators:
-      - Prompt Engineering: prompt-engineering/index.md
-      - Custom LLM: custom-llm/index.md      # ← added
-      - Code Converter: code-converter/index.md
-      - Data Buddy:
-          - Overview: data-buddy/index.md
-          - Data Profiling: data-buddy/data-profiling.md
-          - Data Quality: data-buddy/data-quality.md
-          - Data Cataloging: data-buddy/data-cataloging.md
-          - Anomaly Detection: data-buddy/anomaly-detection.md
-          - Compliance: data-buddy/compliance.md
-          - Workflow Automation: data-buddy/workflow-automation.md
-          - Conversational AI: data-buddy/conversational-ai.md
-          - Knowledge Files: data-buddy/knowledge-files.md
-      - MDM: mdm/index.md
-      - Sidecar Applications: sidecar-applications/index.md
-      - Synthetic Data Generator: synthetic-data-generator/index.md
-  - Project:
-      - Contributing: contributing.md
-      - Changelog: changelog.md
-  - Contact: contact.md
+  - Data Governance: data-governance/index.md
+  - Prompt Engineering: prompt-engineering/index.md
+  - Code Converter: code-converter/index.md
+  - Data Genius: data-genius/index.md
+  - MDM: mdm/index.md
+  - Sidecar Apps: sidecar-applications/index.md
+  - Synthetic Data Generator: synthetic-data-generator/index.md
+  - Architecture: architecture/index.md
+  - Test Data: test-data/index.md
+  - Changelog: changelog.md
+  - Contributing: contributing.md

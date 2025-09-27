@@ -60,3 +60,5 @@ Ensure trusted data with **configurable rules, scorecards, alerts,** and a light
 ## Quality Rule Assignment Example (UI)
 ![Data Quality Rules](../_assets/rules.png)
 
+
+

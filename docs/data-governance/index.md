@@ -1,4 +1,4 @@
-# Data Governance
+﻿# Data Governance
 
 Data Governance aligns people, process, and technology so data is **discoverable, trustworthy, compliant, and usable**.  
 Use this page as a quick brief for stakeholders and a map to the related accelerators.
@@ -20,13 +20,13 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   Controls and policies by geography/domain (e.g., GDPR, CCPA, GLBA); automate evidence.
 
 - :material-archive-lock: **Data Retention**  
-  Lifecycle policies for archiving/disposing data; support “right-to-erase” requests.
+  Lifecycle policies for archiving/disposing data; support â€œright-to-eraseâ€ requests.
 
 - :material-account-multiple-check: **Master Data Management (MDM)**  
   Golden records for key entities; survivorship rules; improved cross-system consistency.
 
 - :material-sitemap: **Data Architecture**  
-  The technical blueprint—zones, models, integrations (batch/stream/event), APIs, and IAM—that
+  The technical blueprintâ€”zones, models, integrations (batch/stream/event), APIs, and IAMâ€”that
   implements governance principles and enables reusable, scalable delivery.
 
 - :material-source-branch: **Data Lineage**  
@@ -37,10 +37,15 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 
 ---
 
+
+
 ## Capability matrix
 
 <!-- Scoped styling just for this table -->
 <style>
+/* Capability Matrix â€“ Aldin AI banner look + compact, readable layout */
+
+/* Match the banner/header gradient (deep indigo â†’ Aldin AI purple â†’ electric purple) */
 :root {
   --cap-header-gradient: linear-gradient(
     90deg,
@@ -50,23 +55,24 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
   );
 }
 
-/* Optional: emphasize the ToC download link we'll inject */
-#toc-download-link { font-weight: 600; }
-#toc-download-link::before { content: "⬇️ "; }
+.cap-table {                     /* shrink overall font a bit */
+  font-size: .92rem;
+}
 
-.cap-table { font-size: .92rem; }
-@media (max-width: 900px) { .cap-table { font-size: .88rem; } }
+@media (max-width: 900px) {      /* a touch smaller on narrow screens */
+  .cap-table { font-size: .88rem; }
+}
 
 .cap-table table {
   width: 100%;
-  table-layout: fixed;
+  table-layout: fixed;           /* prevents overflow; respects widths below */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
 
 .cap-table thead th {
-  background: var(--cap-header-gradient);
+  background: var(--cap-header-gradient);  /* banner-matching header */
   color: #fff;
   font-weight: 600;
 }
@@ -74,55 +80,40 @@ Use this page as a quick brief for stakeholders and a map to the related acceler
 .cap-table td,
 .cap-table th {
   vertical-align: top;
-  padding: .60rem .75rem;
+  padding: .60rem .75rem;        /* slightly tighter to fit more content */
 }
 
-.cap-table thead th:nth-child(1) { width: 22%; }
-.cap-table thead th:nth-child(2) { width: 36%; }
-.cap-table thead th:nth-child(3) { width: 20%; }
-.cap-table thead th:nth-child(4) { width: 22%; }
+/* Balanced column widths (will be honored because of table-layout: fixed) */
+.cap-table thead th:nth-child(1) { width: 22%; }  /* Capability / Offerings   */
+.cap-table thead th:nth-child(2) { width: 36%; }  /* What It Means            */
+.cap-table thead th:nth-child(3) { width: 20%; }  /* Whoâ€™s Involved           */
+.cap-table thead th:nth-child(4) { width: 22%; }  /* Why It Matters           */
 
-.cap-table td { word-break: break-word; }
-.cap-table tbody tr:nth-child(odd) td { background: rgba(112,84,255,.03); }
+.cap-table td {                  /* wrap long words/URLs to avoid scrolling */
+  word-break: break-word;
+}
+
+.cap-table tbody tr:nth-child(odd) td {
+  background: rgba(112,84,255,.03);
+}
 </style>
 
 <div class="cap-table" markdown>
 
-| Capability / Offerings | What It Means | Who’s Involved | Why It Matters |
+| Capability / Offerings | What It Means | Whoâ€™s Involved | Why It Matters |
 |---|---|---|---|
 | **Metadata Management** | Create, update, and maintain metadata (data about data); build & operate the data catalog, including policies and lineage links. | Data Steward / Catalog Manager | Enables users to find & understand data; drives self-service analytics. |
 | **Data Profiling** | Sample analysis to surface structure, patterns, outliers; full-dataset assessment across dimensions (completeness, accuracy, uniqueness, validity, timeliness); custom rule definition. | Data Analyst / Steward | Quick health check; guides deeper quality efforts. |
 | **Data Quality** | Dimensions, rules, thresholds/SLAs; continuous monitoring, exceptions, and scorecards. | Data Quality Lead / Engineer | Ensures analytics & ML models use reliable data; reduces risk of bad decisions. |
 | **Data Compliance** | Policies & controls by geography/domain (e.g., GDPR, CCPA, GLBA). Evidence collection and attestation workflows. | Legal & Compliance Team | Avoids fines & lawsuits; supports rights to know/share/port/delete. |
-| **Data Retention** | Lifecycle policies for archiving/disposing data; defensible deletion; “right-to-erase” requests. | Records Manager / IT | Meets legal mandates; simplifies audits and e-discovery. |
+| **Data Retention** | Lifecycle policies for archiving/disposing data; defensible deletion; â€œright-to-eraseâ€ requests. | Records Manager / IT | Meets legal mandates; simplifies audits and e-discovery. |
 | **Master Data Management (MDM)** | Centralize & reconcile critical entity data (customers, products, suppliers). Golden record creation and survivorship rules. | MDM Lead / Architect | Single source of truth; improves cross-system consistency. |
 | **Data Architecture** | Technical blueprint: domain boundaries, data zones, canonical models, integration patterns (batch/stream/event), APIs, storage, compute, and IAM guardrails that implement governance. | Data / Platform Architect, Data Engineering Lead | Provides reusable patterns and platform guardrails for **scalable, secure, cost-effective** delivery; turns policy into practice. |
 | **Data Lineage** | End-to-end traceability of data (system, table, column). Technical + business lineage, change-impact analysis, and code-level drill-downs. | Data Engineer, Steward, Audit / Compliance | Builds trust and speeds issue resolution; supports audits and safe change management. |
 
 </div>
 
-## Download deck {#download-deck}
-<p class="download-inline">
-  <a href="../_assets/data-governance-deck.pptx" download>⬇️ Download the PowerPoint deck</a>
-</p>
-
-<!-- Make the ToC item itself trigger the download -->
-<script>
-(function () {
-  function hook() {
-    var tocLink = document.querySelector('.md-nav--secondary a[href="#download-deck"]');
-    if (!tocLink) return;
-    tocLink.id = 'toc-download-link';
-    tocLink.href = '../_assets/data-governance-deck.pptx';   // from docs/data-governance/ → docs/_assets/
-    tocLink.setAttribute('download', '');
-    tocLink.textContent = 'Download PPT deck';
-  }
-  if (window.document$ && window.document$.subscribe) {
-    window.document$.subscribe(hook);
-  } else {
-    document.addEventListener('DOMContentLoaded', hook);
-  }
-})();
-</script>
-
 > Looking to evaluate maturity? See **[Assessment Questions](assessment.md)**.
+
+
+

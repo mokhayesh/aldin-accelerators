@@ -1,16 +1,5 @@
-# Knowledge Files
+﻿# Knowledge Files
 
-# Reference Any Documentation with Conversational AI
-Leverage the ability to integrate with Expert Personas to produce  Analysis and Insights
-
-Turn your documents into an on-demand expert. **Upload referenceable content** (policies, playbooks, specs, spreadsheets, PDFs, markdown, etc.) and let a **conversational AI** answer questions, summarize, generate checklists, and point you to the exact source passages.
-
-<figure markdown>
-  ![](../_assets/knowledgefile.png){ .screenshot }
-  <figcaption>Load a knowledge pack, then **ask in natural language** (e.g., “What are my vacation days?”). The assistant answers from your files and can export the response.</figcaption>
-</figure>
-
----
 Turn your documents into an on-demand expert. **Upload referenceable content** (policies, playbooks, specs, spreadsheets, PDFs, markdown, etc.) and let a **conversational AI** answer questions, summarize, generate checklists, and point you to the exact source passages.
 
 <div class="grid cards" markdown>
@@ -35,7 +24,7 @@ Turn your documents into an on-demand expert. **Upload referenceable content** (
 
 <figure markdown>
   ![](../_assets/knowledgefiles-part1.png){ .screenshot }
-  <figcaption>Load a knowledge pack, then **ask in natural language** (e.g., “What are my vacation days?”). The assistant answers from your files and can export the response.</figcaption>
+  <figcaption>Load a knowledge pack, then **ask in natural language** (e.g., â€œWhat are my vacation days?â€). The assistant answers from your files and can export the response.</figcaption>
 </figure>
 
 ---
@@ -44,7 +33,7 @@ Turn your documents into an on-demand expert. **Upload referenceable content** (
 
 === "UI"
     1. Click **Load Knowledge** and select files or a folder.  
-    2. Open **Little Buddy** and **Ask a question** (e.g., “Summarize our retention policy”).  
+    2. Open **Little Buddy** and **Ask a question** (e.g., â€œSummarize our retention policyâ€).  
     3. **Export** the response (CSV/TXT) or paste into tickets and docs.
 
 === "CLI (placeholder)"
@@ -58,4 +47,16 @@ Turn your documents into an on-demand expert. **Upload referenceable content** (
     ```
 
 ---
+
+## Recommended structure
+
+```text
+knowledge/
+  glossary/
+  policies/
+  playbooks/
+  runbooks/
+  reference/
+
+
 

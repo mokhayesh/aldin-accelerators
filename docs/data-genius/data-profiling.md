@@ -1,10 +1,6 @@
-# Data Profiling
+﻿# Data Profiling
 
-# High Performance Advanced Data Profiling
-![Data Profiling](../_assets/dp.png){ width="375" }
-
-
-Get a fast understanding of a dataset’s **shape, quality, and risk** before you build rules or dashboards.
+Get a fast understanding of a datasetâ€™s **shape, quality, and risk** before you build rules or dashboards.
 
 <div class="grid cards" markdown>
 
@@ -28,7 +24,7 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 
 <figure markdown>
   ![](../_assets/databuddy-profile-example.png){ .screenshot }
-  <figcaption>Data Buddy — Profile analysis with completeness, uniqueness, min/max, median, and standard deviation per field.</figcaption>
+  <figcaption>Data Buddy â€” Profile analysis with completeness, uniqueness, min/max, median, and standard deviation per field.</figcaption>
 </figure>
 
 ---
@@ -37,7 +33,7 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 
 === "UI"
     1. **Upload** a file or choose a table.  
-    2. Click **Profile** → Data Buddy computes schema, stats, and quality signals.  
+    2. Click **Profile** â†’ Data Buddy computes schema, stats, and quality signals.  
     3. **Export** results as CSV/JSON and attach to your evidence pack.
 
 === "CLI (placeholder)"
@@ -51,11 +47,11 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 
 ## What to look for
 
-- **Completeness** – fields with low non-null ratios usually need rules or defaults.  
-- **Uniqueness** – candidate keys and dedupe hints.  
-- **Ranges & distribution** – suspicious min/max, spikes, long tails → check for unit or parsing issues.  
-- **Outliers** – values far from the median/stdev often indicate data entry or integration problems.  
-- **PII/PHI** – scan names/emails/IDs to drive **Classification** and access controls.
+- **Completeness** â€“ fields with low non-null ratios usually need rules or defaults.  
+- **Uniqueness** â€“ candidate keys and dedupe hints.  
+- **Ranges & distribution** â€“ suspicious min/max, spikes, long tails â†’ check for unit or parsing issues.  
+- **Outliers** â€“ values far from the median/stdev often indicate data entry or integration problems.  
+- **PII/PHI** â€“ scan names/emails/IDs to drive **Classification** and access controls.
 
 ---
 
@@ -64,7 +60,7 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 - Turn findings into **Data Quality** rules (accuracy/completeness/timeliness/consistency/validity/uniqueness).  
 - Capture business meaning and owners in **Data Cataloging**.  
 - Enable **Anomaly Detection** on critical metrics.  
-- Automate the profiling → DQ → report flow in **Workflow Automation**.
+- Automate the profiling â†’ DQ â†’ report flow in **Workflow Automation**.
 
 ---
 
@@ -72,9 +68,12 @@ Get a fast understanding of a dataset’s **shape, quality, and risk** before yo
 
 | Field | Type | Records | Unique | Completeness | Min | Max | Median | StdDev |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| `part_number` | string | 10,000 | 10,000 | 100% | — | — | — | — |
+| `part_number` | string | 10,000 | 10,000 | 100% | â€” | â€” | â€” | â€” |
 | `part_cost` | decimal | 10,000 | 9,798 | 100% | 0.51 | 2,499.98 | 1,244.53 | 718.49 |
 | `number_of_units` | int | 10,000 | 4,295 | 100% | 1 | 5,000 | 2,489.5 | 1,444.14 |
 
 !!! tip "Export & share"
     Include the CSV/JSON profile in your change ticket or governance evidence pack so reviewers can reproduce findings.
+
+
+
